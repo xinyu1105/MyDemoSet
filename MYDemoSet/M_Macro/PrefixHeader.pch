@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  MYDemoSet
+//
+//  Created by pengjiaxin on 2018/3/27.
+//  Copyright © 2018年 pengjiaxin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//浮动按钮
+#import "FloatButton_ViewController.h"
+//空白页展示
+#import "EaseBlankPageViewController.h"
+#import "UIView+EaseBlankPageView.h"
+
+//
+#import "BaiduSimpleMapViewController.h"
+
+#import "GaodeSimpleMapViewController.h"
+
+#import "BaiduProtocolMapViewController.h"
+
+#import "GaodeProtocolMapViewController.h"
+
+#import "BaiduFactoryMapViewController.h"
+
+#import "GaodeFactoryMapViewController.h"
+
+#import "BaiduFactorysMapViewController.h"
+
+#import "Global.h"
+#import "CustomFloatButton.h"
+
+#import "Masonry.h"
+#import "MJRefresh.h"
+
+
+//百度地图头文件
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+
+
+//高德地图
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+
+
+#endif /* PrefixHeader_pch */
