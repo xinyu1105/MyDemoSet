@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290050A520A96DD900575241 /* SystemCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290050A420A96DD900575241 /* SystemCameraViewController.m */; };
 		29846040206C834800B7A7B8 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2984603F206C834800B7A7B8 /* ExampleViewController.m */; };
 		298D1ADB207DB55D009291B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1ADA207DB553009291B8 /* UIKit.framework */; };
 		298D1ADD207DB56F009291B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1ADC207DB567009291B8 /* Foundation.framework */; };
@@ -41,6 +42,8 @@
 		298E2BE920747B1000550A11 /* UIView+EaseBlankPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E2BE820747B1000550A11 /* UIView+EaseBlankPageView.m */; };
 		298E708A207F037700108AED /* BaiduMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E7089207F037700108AED /* BaiduMapFactory.m */; };
 		2992012C206E142A004CD7D8 /* EaseBlankPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2992012B206E142A004CD7D8 /* EaseBlankPageView.m */; };
+		2992161420E4CEAC00F4E280 /* CustomMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2992161320E4CEAC00F4E280 /* CustomMainViewController.m */; };
+		2992161720E4CEBA00F4E280 /* CustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2992161620E4CEBA00F4E280 /* CustomCameraViewController.m */; };
 		299DF59E2079FA23008B1803 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF5722079FA23008B1803 /* MJRefreshAutoFooter.m */; };
 		299DF59F2079FA23008B1803 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF5742079FA23008B1803 /* MJRefreshBackFooter.m */; };
 		299DF5A02079FA23008B1803 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF5762079FA23008B1803 /* MJRefreshComponent.m */; };
@@ -128,6 +131,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290050A320A96DD900575241 /* SystemCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemCameraViewController.h; sourceTree = "<group>"; };
+		290050A420A96DD900575241 /* SystemCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemCameraViewController.m; sourceTree = "<group>"; };
 		2984603E206C834800B7A7B8 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 		2984603F206C834800B7A7B8 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
 		298610EC2069F0C200AC771E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -176,6 +181,10 @@
 		298E7089207F037700108AED /* BaiduMapFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapFactory.m; sourceTree = "<group>"; };
 		2992012A206E142A004CD7D8 /* EaseBlankPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EaseBlankPageView.h; sourceTree = "<group>"; };
 		2992012B206E142A004CD7D8 /* EaseBlankPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EaseBlankPageView.m; sourceTree = "<group>"; };
+		2992161220E4CEAC00F4E280 /* CustomMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMainViewController.h; sourceTree = "<group>"; };
+		2992161320E4CEAC00F4E280 /* CustomMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMainViewController.m; sourceTree = "<group>"; };
+		2992161520E4CEBA00F4E280 /* CustomCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCameraViewController.h; sourceTree = "<group>"; };
+		2992161620E4CEBA00F4E280 /* CustomCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCameraViewController.m; sourceTree = "<group>"; };
 		299DF5712079FA23008B1803 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		299DF5722079FA23008B1803 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		299DF5732079FA23008B1803 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -370,6 +379,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290050A020A96D4900575241 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				290050A220A96D7100575241 /* SystemCamera */,
+				290050A120A96D6E00575241 /* CustomCamera */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		290050A120A96D6E00575241 /* CustomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				2992161220E4CEAC00F4E280 /* CustomMainViewController.h */,
+				2992161320E4CEAC00F4E280 /* CustomMainViewController.m */,
+				2992161520E4CEBA00F4E280 /* CustomCameraViewController.h */,
+				2992161620E4CEBA00F4E280 /* CustomCameraViewController.m */,
+			);
+			path = CustomCamera;
+			sourceTree = "<group>";
+		};
+		290050A220A96D7100575241 /* SystemCamera */ = {
+			isa = PBXGroup;
+			children = (
+				290050A320A96DD900575241 /* SystemCameraViewController.h */,
+				290050A420A96DD900575241 /* SystemCameraViewController.m */,
+			);
+			path = SystemCamera;
+			sourceTree = "<group>";
+		};
 		298610EA2069EFB500AC771E /* M_Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -975,6 +1013,7 @@
 				29920129206E13D5004CD7D8 /* EaseBlackPage */,
 				29AFEEA6206B78AA002A082E /* M__Example */,
 				29B8A5BA2064EF4D008BF9D1 /* FloatButton */,
+				290050A020A96D4900575241 /* Camera */,
 			);
 			path = M__Controllers;
 			sourceTree = "<group>";
@@ -1171,11 +1210,13 @@
 				29AFEED2206B948A002A082E /* NSArray+MASAdditions.m in Sources */,
 				29B8A5872064EC15008BF9D1 /* BaseViewController.m in Sources */,
 				29AAB10F2079BE5400C7EB0B /* UIRefreshControl+AFNetworking.m in Sources */,
+				2992161420E4CEAC00F4E280 /* CustomMainViewController.m in Sources */,
 				29B0B76020999CE300509495 /* BaiduFactoryMapViewController.m in Sources */,
 				299DF5A02079FA23008B1803 /* MJRefreshComponent.m in Sources */,
 				299DF5A12079FA23008B1803 /* MJRefreshFooter.m in Sources */,
 				29AAB10B2079BE5400C7EB0B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				29AAB1022079BE5400C7EB0B /* AFHTTPSessionManager.m in Sources */,
+				2992161720E4CEBA00F4E280 /* CustomCameraViewController.m in Sources */,
 				299DF5A62079FA23008B1803 /* MJRefreshBackGifFooter.m in Sources */,
 				299DF5AE2079FA23008B1803 /* NSBundle+MJRefresh.m in Sources */,
 				29AAB10D2079BE5400C7EB0B /* UIImageView+AFNetworking.m in Sources */,
@@ -1198,6 +1239,7 @@
 				29AAB1072079BE5400C7EB0B /* AFURLSessionManager.m in Sources */,
 				299DF5B12079FA23008B1803 /* UIView+MJExtension.m in Sources */,
 				2992012C206E142A004CD7D8 /* EaseBlankPageView.m in Sources */,
+				290050A520A96DD900575241 /* SystemCameraViewController.m in Sources */,
 				299DF5B02079FA23008B1803 /* UIScrollView+MJRefresh.m in Sources */,
 				29AAB0C42079B7DB00C7EB0B /* EaseBlankPageViewController.m in Sources */,
 				29AFEED3206B948A002A082E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -1406,6 +1448,7 @@
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1437,6 +1480,7 @@
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

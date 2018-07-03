@@ -38,6 +38,8 @@
                             @"BaiduFactoryMap",
                             @"GaodeFactoryMap",
                             @"BaiduFactorysMap(地图,定位)",
+                            @"SystemCamera",
+                            @"CustomCamera",
                             nil];
     self.vcClassNameArray = [NSMutableArray arrayWithObjects:
                              @"ExampleViewController",
@@ -50,6 +52,8 @@
                              @"BaiduFactoryMapViewController",
                              @"GaodeFactoryMapViewController",
                              @"BaiduFactorysMapViewController",
+                             @"SystemCameraViewController",
+                             @"CustomMainViewController",
                              nil];
     
 }

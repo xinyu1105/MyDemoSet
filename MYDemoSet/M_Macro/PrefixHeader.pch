@@ -30,6 +30,11 @@
 
 #import "BaiduFactorysMapViewController.h"
 
+//系统相机
+#import "SystemCameraViewController.h"
+//自定义相机
+#import "CustomMainViewController.h"
+
 #import "Global.h"
 #import "CustomFloatButton.h"
 
