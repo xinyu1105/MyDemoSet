@@ -157,7 +157,7 @@
     
     UIImageView *imagev = [[UIImageView alloc] initWithImage:image];
     imagev.contentMode = UIViewContentModeScaleAspectFill;
-    //*超出容器范围的切除掉
+    //超出容器范围的切除掉
     imagev.clipsToBounds = YES;
     
     imagev.backgroundColor = [UIColor lightGrayColor];

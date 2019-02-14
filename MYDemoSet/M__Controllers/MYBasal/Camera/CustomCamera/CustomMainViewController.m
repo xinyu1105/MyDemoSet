@@ -27,7 +27,7 @@
 -(void)createUI{
     //UILabel
     self.tapLabel = [[UILabel alloc]init];
-    _tapLabel.text = @"点击图片调用系统相机";
+    _tapLabel.text = @"点击屏幕调用系统相机";
     _tapLabel.font = [UIFont systemFontOfSize:14];
     [_tapLabel sizeToFit];
     [self.view addSubview:_tapLabel];

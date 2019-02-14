@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TypeTableViewController.h"
+#import "MainTypeViewController.h"
 #import "CustomFloatButton.h"
 //5,
 #import "BaiduMapFactory.h"
@@ -37,7 +37,7 @@
     [self setBaiduMapWithFactory];
 
     
-    TypeTableViewController *typeTVC = [[TypeTableViewController alloc]init];
+    MainTypeViewController *typeTVC = [[MainTypeViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:typeTVC];
     self.window.rootViewController = navi;
     

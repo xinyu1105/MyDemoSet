@@ -1,23 +1,22 @@
 //
-//  ExampleViewController.m
+//  TabBarViewController.m
 //  MYDemoSet
 //
-//  Created by pengjiaxin on 2018/3/29.
-//  Copyright © 2018年 pengjiaxin. All rights reserved.
+//  Created by pengjiaxin on 2019/1/18.
+//  Copyright © 2019年 pengjiaxin. All rights reserved.
 //
 
-#import "ExampleViewController.h"
+#import "TabBarViewController.h"
 
-@interface ExampleViewController ()
+@interface TabBarViewController ()
 
 @end
 
-@implementation ExampleViewController
+@implementation TabBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

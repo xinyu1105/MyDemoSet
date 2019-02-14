@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		290050A520A96DD900575241 /* SystemCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290050A420A96DD900575241 /* SystemCameraViewController.m */; };
+		2943631C21F1A9C200A3F4BA /* JSCallOCInterceptURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943631B21F1A9C000A3F4BA /* JSCallOCInterceptURLViewController.m */; };
+		2943631E21F1AB0500A3F4BA /* JSCallOCInterceptURL.html in Resources */ = {isa = PBXBuildFile; fileRef = 2943631D21F1AB0500A3F4BA /* JSCallOCInterceptURL.html */; };
+		2943632921F1BE5F00A3F4BA /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943632821F1BE5F00A3F4BA /* TabBarViewController.m */; };
+		2943632C21F1BE9C00A3F4BA /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943632B21F1BE9C00A3F4BA /* NavigationViewController.m */; };
+		2943633A21F1D30C00A3F4BA /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2A207DEC3D009291B8 /* BaiduMapAPI_Base.framework */; };
+		2943633B21F1D30F00A3F4BA /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2B207DEC3D009291B8 /* BaiduMapAPI_Map.framework */; };
+		2943633C21F1D32300A3F4BA /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B3C207DF07F009291B8 /* AMapFoundationKit.framework */; };
+		2943633D21F1D32500A3F4BA /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B3D207DF07F009291B8 /* MAMapKit.framework */; };
+		2943634121F852F400A3F4BA /* BackAndCloseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943634021F852F400A3F4BA /* BackAndCloseViewController.m */; };
+		2943634421F8537F00A3F4BA /* BackAndCloseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943634321F8537F00A3F4BA /* BackAndCloseWebViewController.m */; };
+		2943634822003D3300A3F4BA /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943634722003D3300A3F4BA /* WKWebViewController.m */; };
+		2943634A220045A700A3F4BA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29436349220045A600A3F4BA /* WebKit.framework */; };
+		297622072133F67B000D2865 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297622062133F67B000D2865 /* LoginViewController.m */; };
+		2976220A2133F96B000D2865 /* LoginDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297622092133F96B000D2865 /* LoginDelegateViewController.m */; };
+		2977938121217D5900A972E5 /* NSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977938021217D5900A972E5 /* NSDateTool.m */; };
+		2977938521217EB100A972E5 /* MasonryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977938421217EB100A972E5 /* MasonryListViewController.m */; };
+		2977938921217FE900A972E5 /* MasonryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977938821217FE900A972E5 /* MasonryListTableViewCell.m */; };
 		29846040206C834800B7A7B8 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2984603F206C834800B7A7B8 /* ExampleViewController.m */; };
 		298D1ADB207DB55D009291B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1ADA207DB553009291B8 /* UIKit.framework */; };
 		298D1ADD207DB56F009291B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1ADC207DB567009291B8 /* Foundation.framework */; };
@@ -21,14 +38,10 @@
 		298D1B1A207DE641009291B8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B19207DE63C009291B8 /* CoreTelephony.framework */; };
 		298D1B1C207DE64B009291B8 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B1B207DE64B009291B8 /* libstdc++.6.0.9.tbd */; };
 		298D1B28207DEB06009291B8 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 298D1B27207DEB06009291B8 /* mapapi.bundle */; };
-		298D1B2F207DEC3D009291B8 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2A207DEC3D009291B8 /* BaiduMapAPI_Base.framework */; };
-		298D1B30207DEC3D009291B8 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2B207DEC3D009291B8 /* BaiduMapAPI_Map.framework */; };
 		298D1B31207DEC3D009291B8 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2D207DEC3D009291B8 /* libcrypto.a */; };
 		298D1B32207DEC3D009291B8 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2E207DEC3D009291B8 /* libssl.a */; };
 		298D1B36207DECBE009291B8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B35207DECBE009291B8 /* libz.tbd */; };
 		298D1B38207DED6D009291B8 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B37207DED6D009291B8 /* libstdc++.tbd */; };
-		298D1B3E207DF07F009291B8 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B3C207DF07F009291B8 /* AMapFoundationKit.framework */; };
-		298D1B3F207DF07F009291B8 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B3D207DF07F009291B8 /* MAMapKit.framework */; };
 		298D1B41207DF08B009291B8 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 298D1B40207DF08B009291B8 /* AMap.bundle */; };
 		298D1B43207DF165009291B8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B42207DF154009291B8 /* GLKit.framework */; };
 		298D1B46207DF208009291B8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B45207DF1FF009291B8 /* JavaScriptCore.framework */; };
@@ -64,6 +77,8 @@
 		299DF5AF2079FA23008B1803 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF5992079FA23008B1803 /* UIScrollView+MJExtension.m */; };
 		299DF5B02079FA23008B1803 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF59B2079FA23008B1803 /* UIScrollView+MJRefresh.m */; };
 		299DF5B12079FA23008B1803 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF59D2079FA23008B1803 /* UIView+MJExtension.m */; };
+		29A279F6212FEFB1000C2950 /* PlanAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A279F5212FEFB1000C2950 /* PlanAViewController.m */; };
+		29A279F9212FEFC9000C2950 /* PlanBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A279F8212FEFC9000C2950 /* PlanBViewController.m */; };
 		29AAB0C42079B7DB00C7EB0B /* EaseBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AAB0C32079B7DA00C7EB0B /* EaseBlankPageViewController.m */; };
 		29AAB1022079BE5400C7EB0B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AAB0E12079BE5400C7EB0B /* AFHTTPSessionManager.m */; };
 		29AAB1032079BE5400C7EB0B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AAB0E42079BE5400C7EB0B /* AFNetworkReachabilityManager.m */; };
@@ -107,10 +122,12 @@
 		29B8A5922064EC16008BF9D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A5912064EC16008BF9D1 /* main.m */; };
 		29B8A59C2064EC16008BF9D1 /* MYDemoSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A59B2064EC16008BF9D1 /* MYDemoSetTests.m */; };
 		29B8A5A72064EC16008BF9D1 /* MYDemoSetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A5A62064EC16008BF9D1 /* MYDemoSetUITests.m */; };
-		29B8A5B62064EC47008BF9D1 /* TypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A5B52064EC47008BF9D1 /* TypeTableViewController.m */; };
+		29B8A5B62064EC47008BF9D1 /* MainTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A5B52064EC47008BF9D1 /* MainTypeViewController.m */; };
 		29B8A5BD2064EFA4008BF9D1 /* FloatButton_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A5BC2064EFA4008BF9D1 /* FloatButton_ViewController.m */; };
 		29B8A5C12064EFDC008BF9D1 /* CustomFloatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A5C02064EFDC008BF9D1 /* CustomFloatButton.m */; };
+		29C647FF20F49D520066F51D /* MainTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C647FE20F49D520066F51D /* MainTypeTableViewCell.m */; };
 		29C6E651207C912100D52F04 /* BaiduSimpleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C6E650207C912100D52F04 /* BaiduSimpleMapViewController.m */; };
+		29F3F25521017EA5004F5E61 /* M_Images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29F3F25421017EA5004F5E61 /* M_Images.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +150,31 @@
 /* Begin PBXFileReference section */
 		290050A320A96DD900575241 /* SystemCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemCameraViewController.h; sourceTree = "<group>"; };
 		290050A420A96DD900575241 /* SystemCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemCameraViewController.m; sourceTree = "<group>"; };
+		2943631A21F1A9C000A3F4BA /* JSCallOCInterceptURLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCallOCInterceptURLViewController.h; sourceTree = "<group>"; };
+		2943631B21F1A9C000A3F4BA /* JSCallOCInterceptURLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCallOCInterceptURLViewController.m; sourceTree = "<group>"; };
+		2943631D21F1AB0500A3F4BA /* JSCallOCInterceptURL.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = JSCallOCInterceptURL.html; sourceTree = "<group>"; };
+		2943632721F1BE5F00A3F4BA /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		2943632821F1BE5F00A3F4BA /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		2943632A21F1BE9C00A3F4BA /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		2943632B21F1BE9C00A3F4BA /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		2943633F21F852F400A3F4BA /* BackAndCloseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BackAndCloseViewController.h; path = "MYDemoSet/M__Controllers/MyBasal/UIWebView返回关闭按钮/BackAndCloseViewController.h"; sourceTree = SOURCE_ROOT; };
+		2943634021F852F400A3F4BA /* BackAndCloseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BackAndCloseViewController.m; path = "MYDemoSet/M__Controllers/MyBasal/UIWebView返回关闭按钮/BackAndCloseViewController.m"; sourceTree = SOURCE_ROOT; };
+		2943634221F8537F00A3F4BA /* BackAndCloseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackAndCloseWebViewController.h; sourceTree = "<group>"; };
+		2943634321F8537F00A3F4BA /* BackAndCloseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackAndCloseWebViewController.m; sourceTree = "<group>"; };
+		2943634622003D3300A3F4BA /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WKWebViewController.h; path = MYDemoSet/M__Controllers/MyBasal/WKWebView/WKWebViewController.h; sourceTree = SOURCE_ROOT; };
+		2943634722003D3300A3F4BA /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WKWebViewController.m; path = MYDemoSet/M__Controllers/MyBasal/WKWebView/WKWebViewController.m; sourceTree = SOURCE_ROOT; };
+		29436349220045A600A3F4BA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		297622042133F58B000D2865 /* LoginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginProtocol.h; sourceTree = "<group>"; };
+		297622052133F67B000D2865 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		297622062133F67B000D2865 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		297622082133F96B000D2865 /* LoginDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDelegateViewController.h; sourceTree = "<group>"; };
+		297622092133F96B000D2865 /* LoginDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDelegateViewController.m; sourceTree = "<group>"; };
+		2977937F21217D5900A972E5 /* NSDateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDateTool.h; sourceTree = "<group>"; };
+		2977938021217D5900A972E5 /* NSDateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateTool.m; sourceTree = "<group>"; };
+		2977938321217EB100A972E5 /* MasonryListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryListViewController.h; sourceTree = "<group>"; };
+		2977938421217EB100A972E5 /* MasonryListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryListViewController.m; sourceTree = "<group>"; };
+		2977938721217FE900A972E5 /* MasonryListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryListTableViewCell.h; sourceTree = "<group>"; };
+		2977938821217FE900A972E5 /* MasonryListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryListTableViewCell.m; sourceTree = "<group>"; };
 		2984603E206C834800B7A7B8 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 		2984603F206C834800B7A7B8 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
 		298610EC2069F0C200AC771E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -227,6 +269,10 @@
 		299DF59D2079FA23008B1803 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		299DF5B2207A01FE008B1803 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		299DF5B3207A01FF008B1803 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		29A279F4212FEFB1000C2950 /* PlanAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanAViewController.h; sourceTree = "<group>"; };
+		29A279F5212FEFB1000C2950 /* PlanAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanAViewController.m; sourceTree = "<group>"; };
+		29A279F7212FEFC9000C2950 /* PlanBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanBViewController.h; sourceTree = "<group>"; };
+		29A279F8212FEFC9000C2950 /* PlanBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanBViewController.m; sourceTree = "<group>"; };
 		29AAB0C22079B7DA00C7EB0B /* EaseBlankPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EaseBlankPageViewController.h; sourceTree = "<group>"; };
 		29AAB0C32079B7DA00C7EB0B /* EaseBlankPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EaseBlankPageViewController.m; sourceTree = "<group>"; };
 		29AAB0E02079BE5400C7EB0B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -321,14 +367,17 @@
 		29B8A5A22064EC16008BF9D1 /* MYDemoSetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYDemoSetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B8A5A62064EC16008BF9D1 /* MYDemoSetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYDemoSetUITests.m; sourceTree = "<group>"; };
 		29B8A5A82064EC16008BF9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29B8A5B42064EC47008BF9D1 /* TypeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeTableViewController.h; sourceTree = "<group>"; };
-		29B8A5B52064EC47008BF9D1 /* TypeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewController.m; sourceTree = "<group>"; };
+		29B8A5B42064EC47008BF9D1 /* MainTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTypeViewController.h; sourceTree = "<group>"; };
+		29B8A5B52064EC47008BF9D1 /* MainTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTypeViewController.m; sourceTree = "<group>"; };
 		29B8A5BB2064EFA4008BF9D1 /* FloatButton_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatButton_ViewController.h; sourceTree = "<group>"; };
 		29B8A5BC2064EFA4008BF9D1 /* FloatButton_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatButton_ViewController.m; sourceTree = "<group>"; };
 		29B8A5BF2064EFDC008BF9D1 /* CustomFloatButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFloatButton.h; sourceTree = "<group>"; };
 		29B8A5C02064EFDC008BF9D1 /* CustomFloatButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomFloatButton.m; sourceTree = "<group>"; };
+		29C647FD20F49D520066F51D /* MainTypeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTypeTableViewCell.h; sourceTree = "<group>"; };
+		29C647FE20F49D520066F51D /* MainTypeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTypeTableViewCell.m; sourceTree = "<group>"; };
 		29C6E64F207C912100D52F04 /* BaiduSimpleMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduSimpleMapViewController.h; sourceTree = "<group>"; };
 		29C6E650207C912100D52F04 /* BaiduSimpleMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduSimpleMapViewController.m; sourceTree = "<group>"; };
+		29F3F25421017EA5004F5E61 /* M_Images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = M_Images.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,12 +385,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2943634A220045A700A3F4BA /* WebKit.framework in Frameworks */,
 				298D1B47207DF217009291B8 /* AdSupport.framework in Frameworks */,
 				298D1B46207DF208009291B8 /* JavaScriptCore.framework in Frameworks */,
 				298D1B10207DE5F8009291B8 /* OpenGLES.framework in Frameworks */,
 				298D1B43207DF165009291B8 /* GLKit.framework in Frameworks */,
-				298D1B30207DEC3D009291B8 /* BaiduMapAPI_Map.framework in Frameworks */,
-				298D1B3E207DF07F009291B8 /* AMapFoundationKit.framework in Frameworks */,
 				298D1B1A207DE641009291B8 /* CoreTelephony.framework in Frameworks */,
 				298D1B16207DE628009291B8 /* Security.framework in Frameworks */,
 				298D1B14207DE617009291B8 /* CoreGraphics.framework in Frameworks */,
@@ -353,12 +401,14 @@
 				298D1B4B207DF272009291B8 /* libc++.tbd in Frameworks */,
 				298D1B0E207DE5E4009291B8 /* QuartzCore.framework in Frameworks */,
 				298D1B0C207DE5D2009291B8 /* CoreLocation.framework in Frameworks */,
-				298D1B3F207DF07F009291B8 /* MAMapKit.framework in Frameworks */,
 				298D1B18207DE632009291B8 /* libsqlite3.0.tbd in Frameworks */,
 				298D1ADD207DB56F009291B8 /* Foundation.framework in Frameworks */,
-				298D1B2F207DEC3D009291B8 /* BaiduMapAPI_Base.framework in Frameworks */,
 				298D1ADB207DB55D009291B8 /* UIKit.framework in Frameworks */,
 				298D1B1C207DE64B009291B8 /* libstdc++.6.0.9.tbd in Frameworks */,
+				2943633A21F1D30C00A3F4BA /* BaiduMapAPI_Base.framework in Frameworks */,
+				2943633B21F1D30F00A3F4BA /* BaiduMapAPI_Map.framework in Frameworks */,
+				2943633C21F1D32300A3F4BA /* AMapFoundationKit.framework in Frameworks */,
+				2943633D21F1D32500A3F4BA /* MAMapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +456,170 @@
 				290050A420A96DD900575241 /* SystemCameraViewController.m */,
 			);
 			path = SystemCamera;
+			sourceTree = "<group>";
+		};
+		2943631821F1A8E700A3F4BA /* JS调用OC */ = {
+			isa = PBXGroup;
+			children = (
+				2943631A21F1A9C000A3F4BA /* JSCallOCInterceptURLViewController.h */,
+				2943631B21F1A9C000A3F4BA /* JSCallOCInterceptURLViewController.m */,
+				2943631D21F1AB0500A3F4BA /* JSCallOCInterceptURL.html */,
+			);
+			path = "JS调用OC";
+			sourceTree = "<group>";
+		};
+		2943631921F1A8FB00A3F4BA /* OC调用JS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "OC调用JS";
+			sourceTree = "<group>";
+		};
+		2943631F21F1B6F500A3F4BA /* MyBasal */ = {
+			isa = PBXGroup;
+			children = (
+				299DF5B5207B5AF2008B1803 /* BaiduMap */,
+				298D1B39207DF04D009291B8 /* GaodeMap */,
+				29920129206E13D5004CD7D8 /* EaseBlackPage */,
+				29AFEEA6206B78AA002A082E /* M__Example */,
+				29B8A5BA2064EF4D008BF9D1 /* FloatButton */,
+				290050A020A96D4900575241 /* Camera */,
+				2977938221217E3B00A972E5 /* Masonry自动计算高度 */,
+				29A279F0212FEF1F000C2950 /* 界面间传值 */,
+				296472E421D4B3E100BBEDE1 /* UIWebview JS交互 */,
+				2943633E21F8528300A3F4BA /* UIWebView返回关闭按钮 */,
+				2943634522003CCE00A3F4BA /* WKWebView */,
+			);
+			name = MyBasal;
+			path = MYBasal;
+			sourceTree = "<group>";
+		};
+		2943632021F1BCC700A3F4BA /* MyBasal */ = {
+			isa = PBXGroup;
+			children = (
+				2977938621217FA800A972E5 /* Masonry自动计算高度 */,
+				29C647FC20F49D260066F51D /* Main */,
+				298D1B5E207E125C009291B8 /* GaodeMap */,
+				299DF5B6207B5B28008B1803 /* BaiduMap */,
+				29920128206E13B3004CD7D8 /* EaseBlackPage */,
+				29AFEED7206B9570002A082E /* M__Example */,
+				29B8A5BE2064EFB1008BF9D1 /* FloatButton */,
+			);
+			path = MyBasal;
+			sourceTree = "<group>";
+		};
+		2943632121F1BCDC00A3F4BA /* MyBasal */ = {
+			isa = PBXGroup;
+			children = (
+				29B0B7762099B0AA00509495 /* 地图 */,
+				29AFEF15206B991A002A082E /* M__Example */,
+			);
+			path = MyBasal;
+			sourceTree = "<group>";
+		};
+		2943632221F1BCF900A3F4BA /* MyFind */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyFind;
+			sourceTree = "<group>";
+		};
+		2943632321F1BCFD00A3F4BA /* MySet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MySet;
+			sourceTree = "<group>";
+		};
+		2943632421F1BD3C00A3F4BA /* MyFind */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyFind;
+			sourceTree = "<group>";
+		};
+		2943632521F1BD4600A3F4BA /* MyFind */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyFind;
+			sourceTree = "<group>";
+		};
+		2943632621F1BD8100A3F4BA /* MySet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MySet;
+			sourceTree = "<group>";
+		};
+		2943632D21F1BEA600A3F4BA /* NaviAndTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2943632A21F1BE9C00A3F4BA /* NavigationViewController.h */,
+				2943632B21F1BE9C00A3F4BA /* NavigationViewController.m */,
+				2943632721F1BE5F00A3F4BA /* TabBarViewController.h */,
+				2943632821F1BE5F00A3F4BA /* TabBarViewController.m */,
+			);
+			path = NaviAndTabbar;
+			sourceTree = "<group>";
+		};
+		2943633E21F8528300A3F4BA /* UIWebView返回关闭按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				2943633F21F852F400A3F4BA /* BackAndCloseViewController.h */,
+				2943634021F852F400A3F4BA /* BackAndCloseViewController.m */,
+				2943634221F8537F00A3F4BA /* BackAndCloseWebViewController.h */,
+				2943634321F8537F00A3F4BA /* BackAndCloseWebViewController.m */,
+			);
+			path = "UIWebView返回关闭按钮";
+			sourceTree = "<group>";
+		};
+		2943634522003CCE00A3F4BA /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				2943634622003D3300A3F4BA /* WKWebViewController.h */,
+				2943634722003D3300A3F4BA /* WKWebViewController.m */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		296472E421D4B3E100BBEDE1 /* UIWebview JS交互 */ = {
+			isa = PBXGroup;
+			children = (
+				2943631821F1A8E700A3F4BA /* JS调用OC */,
+				2943631921F1A8FB00A3F4BA /* OC调用JS */,
+			);
+			path = "UIWebview JS交互";
+			sourceTree = "<group>";
+		};
+		297622032133F54B000D2865 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				297622042133F58B000D2865 /* LoginProtocol.h */,
+				297622082133F96B000D2865 /* LoginDelegateViewController.h */,
+				297622092133F96B000D2865 /* LoginDelegateViewController.m */,
+				297622052133F67B000D2865 /* LoginViewController.h */,
+				297622062133F67B000D2865 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2977938221217E3B00A972E5 /* Masonry自动计算高度 */ = {
+			isa = PBXGroup;
+			children = (
+				2977938321217EB100A972E5 /* MasonryListViewController.h */,
+				2977938421217EB100A972E5 /* MasonryListViewController.m */,
+			);
+			path = "Masonry自动计算高度";
+			sourceTree = "<group>";
+		};
+		2977938621217FA800A972E5 /* Masonry自动计算高度 */ = {
+			isa = PBXGroup;
+			children = (
+				2977938721217FE900A972E5 /* MasonryListTableViewCell.h */,
+				2977938821217FE900A972E5 /* MasonryListTableViewCell.m */,
+			);
+			path = "Masonry自动计算高度";
 			sourceTree = "<group>";
 		};
 		298610EA2069EFB500AC771E /* M_Macro */ = {
@@ -544,6 +758,7 @@
 		29983B5F207C4D2C006A7EEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29436349220045A600A3F4BA /* WebKit.framework */,
 				298D1B4A207DF272009291B8 /* libc++.tbd */,
 				298D1B48207DF24E009291B8 /* libc.tbd */,
 				298D1B45207DF1FF009291B8 /* JavaScriptCore.framework */,
@@ -729,6 +944,18 @@
 				298E7089207F037700108AED /* BaiduMapFactory.m */,
 			);
 			path = FactoryWay;
+			sourceTree = "<group>";
+		};
+		29A279F0212FEF1F000C2950 /* 界面间传值 */ = {
+			isa = PBXGroup;
+			children = (
+				29A279F4212FEFB1000C2950 /* PlanAViewController.h */,
+				29A279F5212FEFB1000C2950 /* PlanAViewController.m */,
+				29A279F7212FEFC9000C2950 /* PlanBViewController.h */,
+				29A279F8212FEFC9000C2950 /* PlanBViewController.m */,
+				297622032133F54B000D2865 /* Login */,
+			);
+			path = "界面间传值";
 			sourceTree = "<group>";
 		};
 		29AAB0DE2079BE5400C7EB0B /* 3.0AFN */ = {
@@ -949,6 +1176,7 @@
 			children = (
 				29B8A5822064EC15008BF9D1 /* AppDelegate.h */,
 				29B8A5832064EC15008BF9D1 /* AppDelegate.m */,
+				2943632D21F1BEA600A3F4BA /* NaviAndTabbar */,
 				29B8A5C22064EFFE008BF9D1 /* M__Base */,
 				29B8A5C42064F036008BF9D1 /* M__Tools */,
 				29B8A5C32064F00F008BF9D1 /* M__Main */,
@@ -956,6 +1184,7 @@
 				29B8A5B82064EF11008BF9D1 /* M__Views */,
 				29B8A5B72064EEF0008BF9D1 /* M__Modesl */,
 				29AFEEAD206B942D002A082E /* M__Pods */,
+				29FE44AE20FDE6FE008B8B9E /* M_Resources */,
 				298610EA2069EFB500AC771E /* M_Macro */,
 				29B8A5882064EC16008BF9D1 /* Main.storyboard */,
 				29B8A58B2064EC16008BF9D1 /* Assets.xcassets */,
@@ -987,8 +1216,9 @@
 		29B8A5B72064EEF0008BF9D1 /* M__Modesl */ = {
 			isa = PBXGroup;
 			children = (
-				29B0B7762099B0AA00509495 /* 地图 */,
-				29AFEF15206B991A002A082E /* M__Example */,
+				2943632121F1BCDC00A3F4BA /* MyBasal */,
+				2943632521F1BD4600A3F4BA /* MyFind */,
+				2943632621F1BD8100A3F4BA /* MySet */,
 			);
 			path = M__Modesl;
 			sourceTree = "<group>";
@@ -996,11 +1226,8 @@
 		29B8A5B82064EF11008BF9D1 /* M__Views */ = {
 			isa = PBXGroup;
 			children = (
-				298D1B5E207E125C009291B8 /* GaodeMap */,
-				299DF5B6207B5B28008B1803 /* BaiduMap */,
-				29920128206E13B3004CD7D8 /* EaseBlackPage */,
-				29AFEED7206B9570002A082E /* M__Example */,
-				29B8A5BE2064EFB1008BF9D1 /* FloatButton */,
+				2943632021F1BCC700A3F4BA /* MyBasal */,
+				2943632421F1BD3C00A3F4BA /* MyFind */,
 			);
 			path = M__Views;
 			sourceTree = "<group>";
@@ -1008,12 +1235,9 @@
 		29B8A5B92064EF28008BF9D1 /* M__Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				298D1B39207DF04D009291B8 /* GaodeMap */,
-				299DF5B5207B5AF2008B1803 /* BaiduMap */,
-				29920129206E13D5004CD7D8 /* EaseBlackPage */,
-				29AFEEA6206B78AA002A082E /* M__Example */,
-				29B8A5BA2064EF4D008BF9D1 /* FloatButton */,
-				290050A020A96D4900575241 /* Camera */,
+				2943631F21F1B6F500A3F4BA /* MyBasal */,
+				2943632221F1BCF900A3F4BA /* MyFind */,
+				2943632321F1BCFD00A3F4BA /* MySet */,
 			);
 			path = M__Controllers;
 			sourceTree = "<group>";
@@ -1048,8 +1272,8 @@
 		29B8A5C32064F00F008BF9D1 /* M__Main */ = {
 			isa = PBXGroup;
 			children = (
-				29B8A5B42064EC47008BF9D1 /* TypeTableViewController.h */,
-				29B8A5B52064EC47008BF9D1 /* TypeTableViewController.m */,
+				29B8A5B42064EC47008BF9D1 /* MainTypeViewController.h */,
+				29B8A5B52064EC47008BF9D1 /* MainTypeViewController.m */,
 			);
 			path = M__Main;
 			sourceTree = "<group>";
@@ -1057,8 +1281,27 @@
 		29B8A5C42064F036008BF9D1 /* M__Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2977937F21217D5900A972E5 /* NSDateTool.h */,
+				2977938021217D5900A972E5 /* NSDateTool.m */,
 			);
 			path = M__Tools;
+			sourceTree = "<group>";
+		};
+		29C647FC20F49D260066F51D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				29C647FD20F49D520066F51D /* MainTypeTableViewCell.h */,
+				29C647FE20F49D520066F51D /* MainTypeTableViewCell.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		29FE44AE20FDE6FE008B8B9E /* M_Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29F3F25421017EA5004F5E61 /* M_Images.bundle */,
+			);
+			path = M_Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1169,8 +1412,10 @@
 				29B8A58F2064EC16008BF9D1 /* LaunchScreen.storyboard in Resources */,
 				29B8A58C2064EC16008BF9D1 /* Assets.xcassets in Resources */,
 				298D1B41207DF08B009291B8 /* AMap.bundle in Resources */,
+				29F3F25521017EA5004F5E61 /* M_Images.bundle in Resources */,
 				299DF5AC2079FA23008B1803 /* MJRefresh.bundle in Resources */,
 				29AFEED6206B948A002A082E /* README.md in Resources */,
+				2943631E21F1AB0500A3F4BA /* JSCallOCInterceptURL.html in Resources */,
 				29AFEECB206B948A002A082E /* LICENSE in Resources */,
 				29B8A58A2064EC16008BF9D1 /* Main.storyboard in Resources */,
 				298D1B28207DEB06009291B8 /* mapapi.bundle in Resources */,
@@ -1200,6 +1445,7 @@
 			files = (
 				29B8A5BD2064EFA4008BF9D1 /* FloatButton_ViewController.m in Sources */,
 				299DF5A32079FA23008B1803 /* MJRefreshAutoGifFooter.m in Sources */,
+				297622072133F67B000D2865 /* LoginViewController.m in Sources */,
 				29B0B76620999F7F00509495 /* GaodeMapFactory.m in Sources */,
 				29AAB1062079BE5400C7EB0B /* AFURLResponseSerialization.m in Sources */,
 				29AAB1082079BE5400C7EB0B /* AFAutoPurgingImageCache.m in Sources */,
@@ -1207,7 +1453,9 @@
 				29B0B76320999F3800509495 /* GaodeFactoryMapViewController.m in Sources */,
 				298D1B4E207DF3ED009291B8 /* GaodeSimpleMapViewController.m in Sources */,
 				29AAB1102079BE5400C7EB0B /* UIWebView+AFNetworking.m in Sources */,
+				2943631C21F1A9C200A3F4BA /* JSCallOCInterceptURLViewController.m in Sources */,
 				29AFEED2206B948A002A082E /* NSArray+MASAdditions.m in Sources */,
+				2943632C21F1BE9C00A3F4BA /* NavigationViewController.m in Sources */,
 				29B8A5872064EC15008BF9D1 /* BaseViewController.m in Sources */,
 				29AAB10F2079BE5400C7EB0B /* UIRefreshControl+AFNetworking.m in Sources */,
 				2992161420E4CEAC00F4E280 /* CustomMainViewController.m in Sources */,
@@ -1220,10 +1468,12 @@
 				299DF5A62079FA23008B1803 /* MJRefreshBackGifFooter.m in Sources */,
 				299DF5AE2079FA23008B1803 /* NSBundle+MJRefresh.m in Sources */,
 				29AAB10D2079BE5400C7EB0B /* UIImageView+AFNetworking.m in Sources */,
+				2943634121F852F400A3F4BA /* BackAndCloseViewController.m in Sources */,
 				299DF5A72079FA23008B1803 /* MJRefreshBackNormalFooter.m in Sources */,
+				2943632921F1BE5F00A3F4BA /* TabBarViewController.m in Sources */,
 				29B0B7712099ACB800509495 /* BaiduMapFactorys.m in Sources */,
 				29AAB10C2079BE5400C7EB0B /* UIButton+AFNetworking.m in Sources */,
-				29B8A5B62064EC47008BF9D1 /* TypeTableViewController.m in Sources */,
+				29B8A5B62064EC47008BF9D1 /* MainTypeViewController.m in Sources */,
 				299DF59E2079FA23008B1803 /* MJRefreshAutoFooter.m in Sources */,
 				299DF59F2079FA23008B1803 /* MJRefreshBackFooter.m in Sources */,
 				299DF5A22079FA23008B1803 /* MJRefreshHeader.m in Sources */,
@@ -1243,17 +1493,23 @@
 				299DF5B02079FA23008B1803 /* UIScrollView+MJRefresh.m in Sources */,
 				29AAB0C42079B7DB00C7EB0B /* EaseBlankPageViewController.m in Sources */,
 				29AFEED3206B948A002A082E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				2977938921217FE900A972E5 /* MasonryListTableViewCell.m in Sources */,
+				2977938521217EB100A972E5 /* MasonryListViewController.m in Sources */,
 				29846040206C834800B7A7B8 /* ExampleViewController.m in Sources */,
 				298E708A207F037700108AED /* BaiduMapFactory.m in Sources */,
 				29AFEECC206B948A002A082E /* MASCompositeConstraint.m in Sources */,
 				29B8A5922064EC16008BF9D1 /* main.m in Sources */,
+				29A279F6212FEFB1000C2950 /* PlanAViewController.m in Sources */,
 				29AAB1052079BE5400C7EB0B /* AFURLRequestSerialization.m in Sources */,
 				299DF5A82079FA23008B1803 /* MJRefreshBackStateFooter.m in Sources */,
 				299DF5AD2079FA23008B1803 /* MJRefreshConst.m in Sources */,
+				2943634822003D3300A3F4BA /* WKWebViewController.m in Sources */,
 				299DF5A92079FA23008B1803 /* MJRefreshGifHeader.m in Sources */,
 				29B0B77B2099BAC600509495 /* MapEngine.m in Sources */,
+				29A279F9212FEFC9000C2950 /* PlanBViewController.m in Sources */,
 				298D1B5C207E1113009291B8 /* GaodeProtocolMapViewController.m in Sources */,
 				29AAB1032079BE5400C7EB0B /* AFNetworkReachabilityManager.m in Sources */,
+				2943634421F8537F00A3F4BA /* BackAndCloseWebViewController.m in Sources */,
 				298D1B58207E0AD1009291B8 /* BaiduProtocolMapViewController.m in Sources */,
 				298D1B54207E0260009291B8 /* BaiduMapView.m in Sources */,
 				29B8A5842064EC15008BF9D1 /* AppDelegate.m in Sources */,
@@ -1264,8 +1520,11 @@
 				29AFEED5206B948A002A082E /* ViewController+MASAdditions.m in Sources */,
 				29AFEED1206B948A002A082E /* MASViewConstraint.m in Sources */,
 				29AAB10A2079BE5400C7EB0B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				2977938121217D5900A972E5 /* NSDateTool.m in Sources */,
 				299DF5A52079FA23008B1803 /* MJRefreshAutoStateFooter.m in Sources */,
 				29C6E651207C912100D52F04 /* BaiduSimpleMapViewController.m in Sources */,
+				29C647FF20F49D520066F51D /* MainTypeTableViewCell.m in Sources */,
+				2976220A2133F96B000D2865 /* LoginDelegateViewController.m in Sources */,
 				29B8A5C12064EFDC008BF9D1 /* CustomFloatButton.m in Sources */,
 				29AFEED0206B948A002A082E /* MASViewAttribute.m in Sources */,
 				298E2BE920747B1000550A11 /* UIView+EaseBlankPageView.m in Sources */,
@@ -1434,15 +1693,15 @@
 		29B8A5AC2064EC16008BF9D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LAAJN2NAF;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/MYDemoSet/M__Controllers/BaiduMap/Libs",
-					"$(PROJECT_DIR)/MYDemoSet/M__Controllers/GaodeMap/Libs",
+					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs\"",
+					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/GaodeMap/Libs\"",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
@@ -1450,11 +1709,7 @@
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MYDemoSet/M__Controllers/BaiduMap/Libs/thirdlibs",
-					"$(PROJECT_DIR)",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MYDemoSet;
@@ -1466,15 +1721,15 @@
 		29B8A5AD2064EC16008BF9D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LAAJN2NAF;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/MYDemoSet/M__Controllers/BaiduMap/Libs",
-					"$(PROJECT_DIR)/MYDemoSet/M__Controllers/GaodeMap/Libs",
+					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs\"",
+					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/GaodeMap/Libs\"",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
@@ -1482,11 +1737,7 @@
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MYDemoSet/M__Controllers/BaiduMap/Libs/thirdlibs",
-					"$(PROJECT_DIR)",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MYDemoSet;

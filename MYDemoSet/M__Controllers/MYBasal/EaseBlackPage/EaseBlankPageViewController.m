@@ -19,12 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"空白页展示";
-    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self addTableView];
+    
 }
-
 
 -(void)addTableView{
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT -64) style:UITableViewStylePlain];
@@ -89,6 +89,7 @@
     
     return cell;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

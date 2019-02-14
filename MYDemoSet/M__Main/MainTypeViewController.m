@@ -1,32 +1,32 @@
 //
-//  TypeTableViewController.m
+//  MainTypeViewController.m
 //  MYDemoSet
 //
 //  Created by pengjiaxin on 2018/3/23.
 //  Copyright © 2018年 pengjiaxin. All rights reserved.
 //
 
-#import "TypeTableViewController.h"
+#import "MainTypeViewController.h"
+
+#import "MainTypeTableViewCell.h"
 
 #import "ExampleViewController.h"
 
 
-@interface TypeTableViewController ()
+@interface MainTypeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *typeTitlesArray;
 @property (nonatomic, strong) NSMutableArray *vcClassNameArray;
 
 @end
 
-@implementation TypeTableViewController
+@implementation MainTypeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.title = @"我的Demo集";
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    
     self.typeTitlesArray = [NSMutableArray arrayWithObjects:
                             @"测试Example",
                             @"浮动按钮",
@@ -40,6 +40,11 @@
                             @"BaiduFactorysMap(地图,定位)",
                             @"SystemCamera",
                             @"CustomCamera",
+                            @"Masonry(TableView自动计算高度)",
+                            @"delegate传值（A->B界面间传值）",
+                            @"登录delegate",
+                            @"JS调用原生OC（通过UIWebView拦截URL）",
+                            @"UIWebView 左上角添加返回 关闭按钮 （返回上一级）",
                             nil];
     self.vcClassNameArray = [NSMutableArray arrayWithObjects:
                              @"ExampleViewController",
@@ -54,8 +59,27 @@
                              @"BaiduFactorysMapViewController",
                              @"SystemCameraViewController",
                              @"CustomMainViewController",
+                             @"MasonryListViewController",
+                             @"PlanAViewController",
+                             @"LoginDelegateViewController",
+                             @"JSCallOCInterceptURLViewController",
+                             @"BackAndCloseViewController",
                              nil];
     
+    self.tableView = [[UITableView alloc]init];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.rowHeight = UITableViewAutomaticDimension;
+    _tableView.estimatedRowHeight = 40;
+    [self.view addSubview:_tableView];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(self.view).offset(20);
+    }];
+    
+    [self.tableView registerClass:[MainTypeTableViewCell class] forCellReuseIdentifier:@"cell"];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,9 +95,11 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld, %@",indexPath.row +1,self.typeTitlesArray[indexPath.row]];
     
+    MainTypeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
+    [cell configureCellWithTitle:[NSString stringWithFormat:@"%ld, %@",indexPath.row +1,self.typeTitlesArray[indexPath.row]]];
+
     return cell;
 }
 
