@@ -30,7 +30,10 @@
 #define kRealWidth(with) ((with)*(SCREEN_WIDTH/375.0f))
 #define kRealHeight(height)   (IsIphoneX?(height)*(667.0/667.0f):(height)*(SCREEN_HEIGHT/667.0f))
 
-
+#define UM_AppKey (@"554745cd67e58e694f00258c")
+#define UMShareWeixinAppID (@"wx4f349bf69229013d")
+#define UMShareWeixinAppSecret (@"d4624c36b6795d1d99dcf0547af5443d")
+#define TCUMShareAppRedirectURL (@"http://sec.tiancity.com/homepage/")
 
 
 #endif /* Global_h */

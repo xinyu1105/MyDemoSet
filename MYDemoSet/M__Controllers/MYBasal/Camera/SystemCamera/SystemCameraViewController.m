@@ -30,6 +30,7 @@
     [self createUI];
     
     
+    
 }
 -(void)createUI{
     //UILabel
@@ -65,7 +66,10 @@
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapGestureAction:)];
     [self.tapImageView addGestureRecognizer:tapGesture];
     
+    
 }
+
+
 
 /**
  图片手势点击方法实现

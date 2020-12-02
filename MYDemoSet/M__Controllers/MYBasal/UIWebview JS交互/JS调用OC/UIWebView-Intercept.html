@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=utf8">
+            <title>UIWebView-Intercept</title>
+            <script language = "javascript">
+                
+                //! 4加载URL
+                function loadURL(url) {
+                    window.location.href = url;
+                }
+            
+            //! 3JS调用iOS入口
+            function jsToOc(action, params) {
+                var url = "jsToOc://" + action + "?" + params;
+                loadURL(url);
+            }
+            
+            //!2 JS登录成功后loadURL并传参token
+            function loginSucceed(token) {
+                var action = "loginSucceed";
+                jsToOc(action, token);
+            }
+            
+            //! 1登录功能
+            function login() {
+                var token = "js_tokenString";
+                loginSucceed(token);
+            }
+   
+                </script>
+            </head>
+    
+    <body>
+        <h3>功能按钮</h3>
+        <button onclick = "login()" style = "font-size: 18px;">登录</button>
+    </body>
+    
+</html>
+
+

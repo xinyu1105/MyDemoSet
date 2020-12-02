@@ -17,6 +17,10 @@
 @property (nonatomic, strong) UIButton *confirmButton;
 @property (nonatomic, strong) UIButton *cancelButton;
 @property (nonatomic, strong) UIImage *showImage;
+
+@property (nonatomic, strong) AVCaptureDevice *device;
+/** 对焦的绿框 */
+@property (nonatomic)UIView *focusView;
 @end
 
 @implementation CustomCameraViewController
@@ -51,6 +55,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self initAVCaptureSession];
+    //前置、后置摄像头切换
+    [self createChangeCameraButton];
     
     [self addCustomDownView];
 }
@@ -61,14 +67,33 @@
 -(void)initAVCaptureSession{
     self.session = [[AVCaptureSession alloc] init];
     NSError *error;
-    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     //更改这个设置的时候必须先锁定设备，修改完后再解锁，否则崩溃
-    [device lockForConfiguration:nil];
+    [_device lockForConfiguration:nil];
     //设置闪光灯为自动
-    [device setFlashMode:AVCaptureFlashModeAuto];
-    [device unlockForConfiguration];
+    if ([_device isFlashModeSupported:AVCaptureFlashModeAuto]) {
+        NSLog(@"支持闪光灯");
+        [_device setFlashMode:AVCaptureFlashModeAuto];
+    }
+    // 开启自动对焦
+    if ([_device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
+        [_device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
+    }
     
-    self.videoInput = [[AVCaptureDeviceInput alloc] initWithDevice:device error:&error];
+    // 开启自动曝光
+    if ([_device isExposureModeSupported:AVCaptureExposureModeContinuousAutoExposure]) {
+        [_device setExposureMode:AVCaptureExposureModeContinuousAutoExposure];
+    }
+    
+
+//    //白平衡
+//    if ([_device isWhiteBalanceModeSupported:AVCaptureWhiteBalanceModeAutoWhiteBalance]) {
+//        [_device setWhiteBalanceMode:AVCaptureWhiteBalanceModeAutoWhiteBalance];
+//    }
+ 
+    [_device unlockForConfiguration];
+    
+    self.deviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:_device error:&error];
     if (error) {
         NSLog(@"%@",error);
     }
@@ -78,8 +103,8 @@
     NSDictionary * outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys:AVVideoCodecJPEG,AVVideoCodecKey, nil];
     [self.stillImageOutput setOutputSettings:outputSettings];
     
-    if ([self.session canAddInput:self.videoInput]) {
-        [self.session addInput:self.videoInput];
+    if ([self.session canAddInput:self.deviceInput]) {
+        [self.session addInput:self.deviceInput];
     }
     if ([self.session canAddOutput:self.stillImageOutput]) {
         [self.session addOutput:self.stillImageOutput];
@@ -102,8 +127,135 @@
      AVLayerVideoGravityResizeAspect,// 等比例填充，直到一个维度到达区域边界
      AVLayerVideoGravityResizeAspectFill,// 等比例填充，直到填充满整个视图区域，其中一个维度的部分区域会被裁剪
      */
+    _focusView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 80, 80)];
+    _focusView.layer.borderWidth = 1.0;
+    _focusView.layer.borderColor =[UIColor greenColor].CGColor;
+    _focusView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:_focusView];
+    _focusView.hidden = YES;
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(focusGesture:)];
+    [self.view addGestureRecognizer:tapGesture];
+    
 }
 
+/**
+ 添加切换摄像头按钮
+ */
+-(void)createChangeCameraButton{
+    UIButton *changeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    changeButton.frame = CGRectMake(0, 0, 40, 44);
+    [changeButton setTitle:@"切换" forState:UIControlStateNormal];
+    [changeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [changeButton addTarget:self action:@selector(changeButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:changeButton];
+    
+}
+
+/**
+ 切换摄像头按钮的点击方法的实现
+ */
+-(void)changeButtonAction{
+    //获取摄像头的数量（该方法会返回当前能够输入视频的全部设备，包括前后摄像头和外接设备）
+    NSInteger cameraCount = [[AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo] count];
+    //摄像头的数量小于等于1的时候直接返回
+    if (cameraCount <= 1) {
+        return;
+    }
+    AVCaptureDevice *newCamera = nil;
+    AVCaptureDeviceInput *newInput = nil;
+    //获取当前相机的方向（前/后）
+    AVCaptureDevicePosition position = [[self.deviceInput device] position];
+    
+    //切换摄像头给 previewLayer 加动画
+    CATransition *animation = [CATransition animation];
+    animation.duration = 0.5f;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.type = @"oglFlip";
+    
+    
+    if (position == AVCaptureDevicePositionFront) {
+        newCamera = [self cameraWithPosition:AVCaptureDevicePositionBack];
+        animation.subtype = kCATransitionFromLeft;
+    }else if (position == AVCaptureDevicePositionBack){
+        newCamera = [self cameraWithPosition:AVCaptureDevicePositionFront];
+        animation.subtype = kCATransitionFromRight;
+    }
+    [self.previewLayer addAnimation:animation forKey:nil];
+    
+    //输入流
+    newInput = [AVCaptureDeviceInput deviceInputWithDevice:newCamera error:nil];
+    if (newInput != nil) {
+        [self.session beginConfiguration];
+        //先移除原来的input
+        [self.session removeInput:self.deviceInput];
+        if ([self.session canAddInput:newInput]) {
+            [self.session addInput:newInput];
+            self.deviceInput = newInput;
+        }else{
+            //如果不能加现在的input，就加原来的input
+            [self.session addInput:self.deviceInput];
+        }
+        [self.session commitConfiguration];
+    }
+    
+}
+
+/**
+ 手势点击方法实现
+
+ @param gesture <#gesture description#>
+ */
+- (void)focusGesture:(UITapGestureRecognizer*)gesture{
+    CGPoint point = [gesture locationInView:gesture.view];
+    [self focusAtPoint:point];
+}
+
+
+- (void)focusAtPoint:(CGPoint)point{
+    CGSize size = self.view.bounds.size;
+    CGPoint focusPoint = CGPointMake( point.y /size.height ,1-point.x/size.width );
+    NSError *error;
+    
+    if ([self.device lockForConfiguration:&error]) {
+        //对焦模式和对焦点
+        if ([self.device isFocusModeSupported:AVCaptureFocusModeAutoFocus]) {
+            [self.device setFocusPointOfInterest:focusPoint];
+            [self.device setFocusMode:AVCaptureFocusModeAutoFocus];
+        }
+        //曝光模式和曝光点
+        if ([self.device isExposureModeSupported:AVCaptureExposureModeAutoExpose ]) {
+            [self.device setExposurePointOfInterest:focusPoint];
+            [self.device setExposureMode:AVCaptureExposureModeAutoExpose];
+        }
+         [self.device unlockForConfiguration];
+        
+        _focusView.center = point;
+        _focusView.hidden = NO;
+        [UIView animateWithDuration:0.3 animations:^{
+            _focusView.transform = CGAffineTransformMakeScale(1.25, 1.25);
+        }completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.5 animations:^{
+                _focusView.transform = CGAffineTransformIdentity;
+            } completion:^(BOOL finished) {
+                _focusView.hidden = YES;
+            }];
+        }];
+        
+    }
+    
+    
+}
+
+
+
+-(AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition)position{
+    NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    for (AVCaptureDevice *device in devices )
+        if ( device.position == position )
+            return device;
+    return nil;
+}
 
 -(void)addCustomDownView{
     

@@ -45,6 +45,9 @@
                             @"登录delegate",
                             @"JS调用原生OC（通过UIWebView拦截URL）",
                             @"UIWebView 左上角添加返回 关闭按钮 （返回上一级）",
+                            @"WKWebViewController",
+                            @"CMPedometerViewController计步器",
+                            @"UMShareViewController分享",
                             nil];
     self.vcClassNameArray = [NSMutableArray arrayWithObjects:
                              @"ExampleViewController",
@@ -64,6 +67,9 @@
                              @"LoginDelegateViewController",
                              @"JSCallOCInterceptURLViewController",
                              @"BackAndCloseViewController",
+                             @"WKWebViewController",
+                             @"CMPedometerViewController",
+                             @"UMShareViewController",
                              nil];
     
     self.tableView = [[UITableView alloc]init];

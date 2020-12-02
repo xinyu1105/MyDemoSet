@@ -20,6 +20,19 @@
 		2943634421F8537F00A3F4BA /* BackAndCloseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943634321F8537F00A3F4BA /* BackAndCloseWebViewController.m */; };
 		2943634822003D3300A3F4BA /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2943634722003D3300A3F4BA /* WKWebViewController.m */; };
 		2943634A220045A700A3F4BA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29436349220045A600A3F4BA /* WebKit.framework */; };
+		295D7511222FACD6008DCA26 /* UIWebViewInterceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295D7510222FACD5008DCA26 /* UIWebViewInterceptViewController.m */; };
+		295D7513222FAD02008DCA26 /* UIWebView-Intercept.html in Resources */ = {isa = PBXBuildFile; fileRef = 295D7512222FAD02008DCA26 /* UIWebView-Intercept.html */; };
+		2962224722C34C19002BDD3C /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962224022C34C07002BDD3C /* libSocialWeChat.a */; };
+		2962224822C34C19002BDD3C /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962224222C34C0B002BDD3C /* UMShare.framework */; };
+		2962224922C34C19002BDD3C /* UMShare.textClipping in Resources */ = {isa = PBXBuildFile; fileRef = 2962224422C34C0E002BDD3C /* UMShare.textClipping */; };
+		2962224A22C34C19002BDD3C /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2962224522C34C0E002BDD3C /* UMSocialSDKResources.bundle */; };
+		2962224B22C34C19002BDD3C /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962224622C34C0E002BDD3C /* UShareUI.framework */; };
+		2962224D22C34C33002BDD3C /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962224C22C34C33002BDD3C /* UMCommon.framework */; };
+		2962225022C34C41002BDD3C /* UMCommonLog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2962224E22C34C40002BDD3C /* UMCommonLog.bundle */; };
+		2962225122C34C41002BDD3C /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962224F22C34C41002BDD3C /* UMCommonLog.framework */; };
+		2962225322C34CBA002BDD3C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962225222C34CBA002BDD3C /* libsqlite3.tbd */; };
+		2962225522C34D2C002BDD3C /* UMShareA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962225422C34D2C002BDD3C /* UMShareA.m */; };
+		2962225922C35579002BDD3C /* UMShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962225822C35579002BDD3C /* UMShareViewController.m */; };
 		297622072133F67B000D2865 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297622062133F67B000D2865 /* LoginViewController.m */; };
 		2976220A2133F96B000D2865 /* LoginDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297622092133F96B000D2865 /* LoginDelegateViewController.m */; };
 		2977938121217D5900A972E5 /* NSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977938021217D5900A972E5 /* NSDateTool.m */; };
@@ -36,7 +49,6 @@
 		298D1B16207DE628009291B8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B15207DE620009291B8 /* Security.framework */; };
 		298D1B18207DE632009291B8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B17207DE632009291B8 /* libsqlite3.0.tbd */; };
 		298D1B1A207DE641009291B8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B19207DE63C009291B8 /* CoreTelephony.framework */; };
-		298D1B1C207DE64B009291B8 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B1B207DE64B009291B8 /* libstdc++.6.0.9.tbd */; };
 		298D1B28207DEB06009291B8 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 298D1B27207DEB06009291B8 /* mapapi.bundle */; };
 		298D1B31207DEC3D009291B8 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2D207DEC3D009291B8 /* libcrypto.a */; };
 		298D1B32207DEC3D009291B8 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D1B2E207DEC3D009291B8 /* libssl.a */; };
@@ -57,6 +69,7 @@
 		2992012C206E142A004CD7D8 /* EaseBlankPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2992012B206E142A004CD7D8 /* EaseBlankPageView.m */; };
 		2992161420E4CEAC00F4E280 /* CustomMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2992161320E4CEAC00F4E280 /* CustomMainViewController.m */; };
 		2992161720E4CEBA00F4E280 /* CustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2992161620E4CEBA00F4E280 /* CustomCameraViewController.m */; };
+		299652AD229D1B8C0039B15F /* CMPedometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299652AC229D1B8C0039B15F /* CMPedometerViewController.m */; };
 		299DF59E2079FA23008B1803 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF5722079FA23008B1803 /* MJRefreshAutoFooter.m */; };
 		299DF59F2079FA23008B1803 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF5742079FA23008B1803 /* MJRefreshBackFooter.m */; };
 		299DF5A02079FA23008B1803 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DF5762079FA23008B1803 /* MJRefreshComponent.m */; };
@@ -164,6 +177,22 @@
 		2943634622003D3300A3F4BA /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WKWebViewController.h; path = MYDemoSet/M__Controllers/MyBasal/WKWebView/WKWebViewController.h; sourceTree = SOURCE_ROOT; };
 		2943634722003D3300A3F4BA /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WKWebViewController.m; path = MYDemoSet/M__Controllers/MyBasal/WKWebView/WKWebViewController.m; sourceTree = SOURCE_ROOT; };
 		29436349220045A600A3F4BA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		295D750F222FACD5008DCA26 /* UIWebViewInterceptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIWebViewInterceptViewController.h; path = "MYDemoSet/M__Controllers/MyBasal/UIWebview JS交互/JS调用OC/UIWebViewInterceptViewController.h"; sourceTree = SOURCE_ROOT; };
+		295D7510222FACD5008DCA26 /* UIWebViewInterceptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UIWebViewInterceptViewController.m; path = "MYDemoSet/M__Controllers/MyBasal/UIWebview JS交互/JS调用OC/UIWebViewInterceptViewController.m"; sourceTree = SOURCE_ROOT; };
+		295D7512222FAD02008DCA26 /* UIWebView-Intercept.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "UIWebView-Intercept.html"; sourceTree = "<group>"; };
+		2962224022C34C07002BDD3C /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		2962224122C34C07002BDD3C /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		2962224222C34C0B002BDD3C /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMShare.framework; sourceTree = "<group>"; };
+		2962224422C34C0E002BDD3C /* UMShare.textClipping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = UMShare.textClipping; sourceTree = "<group>"; };
+		2962224522C34C0E002BDD3C /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		2962224622C34C0E002BDD3C /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		2962224C22C34C33002BDD3C /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		2962224E22C34C40002BDD3C /* UMCommonLog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMCommonLog.bundle; sourceTree = "<group>"; };
+		2962224F22C34C41002BDD3C /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
+		2962225222C34CBA002BDD3C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2962225422C34D2C002BDD3C /* UMShareA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMShareA.m; sourceTree = "<group>"; };
+		2962225722C35579002BDD3C /* UMShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UMShareViewController.h; path = MYDemoSet/M__Controllers/MyBasal/UMShare/UMShareViewController.h; sourceTree = SOURCE_ROOT; };
+		2962225822C35579002BDD3C /* UMShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UMShareViewController.m; path = MYDemoSet/M__Controllers/MyBasal/UMShare/UMShareViewController.m; sourceTree = SOURCE_ROOT; };
 		297622042133F58B000D2865 /* LoginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginProtocol.h; sourceTree = "<group>"; };
 		297622052133F67B000D2865 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		297622062133F67B000D2865 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -189,7 +218,6 @@
 		298D1B15207DE620009291B8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		298D1B17207DE632009291B8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		298D1B19207DE63C009291B8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		298D1B1B207DE64B009291B8 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		298D1B27207DEB06009291B8 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		298D1B2A207DEC3D009291B8 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		298D1B2B207DEC3D009291B8 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
@@ -227,6 +255,8 @@
 		2992161320E4CEAC00F4E280 /* CustomMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMainViewController.m; sourceTree = "<group>"; };
 		2992161520E4CEBA00F4E280 /* CustomCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCameraViewController.h; sourceTree = "<group>"; };
 		2992161620E4CEBA00F4E280 /* CustomCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCameraViewController.m; sourceTree = "<group>"; };
+		299652AB229D1B8C0039B15F /* CMPedometerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CMPedometerViewController.h; path = "MYDemoSet/M__Controllers/MyBasal/计步器/CMPedometerViewController.h"; sourceTree = SOURCE_ROOT; };
+		299652AC229D1B8C0039B15F /* CMPedometerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CMPedometerViewController.m; path = "MYDemoSet/M__Controllers/MyBasal/计步器/CMPedometerViewController.m"; sourceTree = SOURCE_ROOT; };
 		299DF5712079FA23008B1803 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		299DF5722079FA23008B1803 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		299DF5732079FA23008B1803 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -385,14 +415,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298D1B14207DE617009291B8 /* CoreGraphics.framework in Frameworks */,
+				2962225322C34CBA002BDD3C /* libsqlite3.tbd in Frameworks */,
 				2943634A220045A700A3F4BA /* WebKit.framework in Frameworks */,
 				298D1B47207DF217009291B8 /* AdSupport.framework in Frameworks */,
 				298D1B46207DF208009291B8 /* JavaScriptCore.framework in Frameworks */,
 				298D1B10207DE5F8009291B8 /* OpenGLES.framework in Frameworks */,
+				2962224822C34C19002BDD3C /* UMShare.framework in Frameworks */,
 				298D1B43207DF165009291B8 /* GLKit.framework in Frameworks */,
+				2962225122C34C41002BDD3C /* UMCommonLog.framework in Frameworks */,
 				298D1B1A207DE641009291B8 /* CoreTelephony.framework in Frameworks */,
 				298D1B16207DE628009291B8 /* Security.framework in Frameworks */,
-				298D1B14207DE617009291B8 /* CoreGraphics.framework in Frameworks */,
 				298D1B38207DED6D009291B8 /* libstdc++.tbd in Frameworks */,
 				298D1B12207DE608009291B8 /* SystemConfiguration.framework in Frameworks */,
 				298D1B32207DEC3D009291B8 /* libssl.a in Frameworks */,
@@ -404,10 +437,12 @@
 				298D1B18207DE632009291B8 /* libsqlite3.0.tbd in Frameworks */,
 				298D1ADD207DB56F009291B8 /* Foundation.framework in Frameworks */,
 				298D1ADB207DB55D009291B8 /* UIKit.framework in Frameworks */,
-				298D1B1C207DE64B009291B8 /* libstdc++.6.0.9.tbd in Frameworks */,
 				2943633A21F1D30C00A3F4BA /* BaiduMapAPI_Base.framework in Frameworks */,
+				2962224D22C34C33002BDD3C /* UMCommon.framework in Frameworks */,
 				2943633B21F1D30F00A3F4BA /* BaiduMapAPI_Map.framework in Frameworks */,
+				2962224B22C34C19002BDD3C /* UShareUI.framework in Frameworks */,
 				2943633C21F1D32300A3F4BA /* AMapFoundationKit.framework in Frameworks */,
+				2962224722C34C19002BDD3C /* libSocialWeChat.a in Frameworks */,
 				2943633D21F1D32500A3F4BA /* MAMapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +499,9 @@
 				2943631A21F1A9C000A3F4BA /* JSCallOCInterceptURLViewController.h */,
 				2943631B21F1A9C000A3F4BA /* JSCallOCInterceptURLViewController.m */,
 				2943631D21F1AB0500A3F4BA /* JSCallOCInterceptURL.html */,
+				295D750F222FACD5008DCA26 /* UIWebViewInterceptViewController.h */,
+				295D7510222FACD5008DCA26 /* UIWebViewInterceptViewController.m */,
+				295D7512222FAD02008DCA26 /* UIWebView-Intercept.html */,
 			);
 			path = "JS调用OC";
 			sourceTree = "<group>";
@@ -478,6 +516,8 @@
 		2943631F21F1B6F500A3F4BA /* MyBasal */ = {
 			isa = PBXGroup;
 			children = (
+				2962225622C35550002BDD3C /* UMShare */,
+				299652AA229D1B440039B15F /* 计步器 */,
 				299DF5B5207B5AF2008B1803 /* BaiduMap */,
 				298D1B39207DF04D009291B8 /* GaodeMap */,
 				29920129206E13D5004CD7D8 /* EaseBlackPage */,
@@ -581,6 +621,56 @@
 				2943634722003D3300A3F4BA /* WKWebViewController.m */,
 			);
 			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		2962223D22C34BCC002BDD3C /* UMShare */ = {
+			isa = PBXGroup;
+			children = (
+				2962224E22C34C40002BDD3C /* UMCommonLog.bundle */,
+				2962224F22C34C41002BDD3C /* UMCommonLog.framework */,
+				2962224C22C34C33002BDD3C /* UMCommon.framework */,
+				2962223E22C34C07002BDD3C /* SocialLibraries */,
+				2962224222C34C0B002BDD3C /* UMShare.framework */,
+				2962224322C34C0E002BDD3C /* UMSocialUI */,
+				2962225422C34D2C002BDD3C /* UMShareA.m */,
+			);
+			path = UMShare;
+			sourceTree = "<group>";
+		};
+		2962223E22C34C07002BDD3C /* SocialLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				2962223F22C34C07002BDD3C /* WeChat */,
+			);
+			path = SocialLibraries;
+			sourceTree = "<group>";
+		};
+		2962223F22C34C07002BDD3C /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				2962224022C34C07002BDD3C /* libSocialWeChat.a */,
+				2962224122C34C07002BDD3C /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		2962224322C34C0E002BDD3C /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				2962224422C34C0E002BDD3C /* UMShare.textClipping */,
+				2962224522C34C0E002BDD3C /* UMSocialSDKResources.bundle */,
+				2962224622C34C0E002BDD3C /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
+		2962225622C35550002BDD3C /* UMShare */ = {
+			isa = PBXGroup;
+			children = (
+				2962225722C35579002BDD3C /* UMShareViewController.h */,
+				2962225822C35579002BDD3C /* UMShareViewController.m */,
+			);
+			path = UMShare;
 			sourceTree = "<group>";
 		};
 		296472E421D4B3E100BBEDE1 /* UIWebview JS交互 */ = {
@@ -755,9 +845,19 @@
 			path = EaseBlackPage;
 			sourceTree = "<group>";
 		};
+		299652AA229D1B440039B15F /* 计步器 */ = {
+			isa = PBXGroup;
+			children = (
+				299652AB229D1B8C0039B15F /* CMPedometerViewController.h */,
+				299652AC229D1B8C0039B15F /* CMPedometerViewController.m */,
+			);
+			path = "计步器";
+			sourceTree = "<group>";
+		};
 		29983B5F207C4D2C006A7EEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2962225222C34CBA002BDD3C /* libsqlite3.tbd */,
 				29436349220045A600A3F4BA /* WebKit.framework */,
 				298D1B4A207DF272009291B8 /* libc++.tbd */,
 				298D1B48207DF24E009291B8 /* libc.tbd */,
@@ -766,7 +866,6 @@
 				298D1B42207DF154009291B8 /* GLKit.framework */,
 				298D1B37207DED6D009291B8 /* libstdc++.tbd */,
 				298D1B35207DECBE009291B8 /* libz.tbd */,
-				298D1B1B207DE64B009291B8 /* libstdc++.6.0.9.tbd */,
 				298D1B19207DE63C009291B8 /* CoreTelephony.framework */,
 				298D1B17207DE632009291B8 /* libsqlite3.0.tbd */,
 				298D1B15207DE620009291B8 /* Security.framework */,
@@ -1026,6 +1125,7 @@
 		29AFEEAD206B942D002A082E /* M__Pods */ = {
 			isa = PBXGroup;
 			children = (
+				2962223D22C34BCC002BDD3C /* UMShare */,
 				299DF56F2079FA23008B1803 /* MJRefresh */,
 				29AAB0DE2079BE5400C7EB0B /* 3.0AFN */,
 				29AFEEAE206B948A002A082E /* Masonry */,
@@ -1390,7 +1490,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 29B8A5762064EC15008BF9D1;
 			productRefGroup = 29B8A5802064EC15008BF9D1 /* Products */;
@@ -1412,11 +1514,15 @@
 				29B8A58F2064EC16008BF9D1 /* LaunchScreen.storyboard in Resources */,
 				29B8A58C2064EC16008BF9D1 /* Assets.xcassets in Resources */,
 				298D1B41207DF08B009291B8 /* AMap.bundle in Resources */,
+				295D7513222FAD02008DCA26 /* UIWebView-Intercept.html in Resources */,
 				29F3F25521017EA5004F5E61 /* M_Images.bundle in Resources */,
 				299DF5AC2079FA23008B1803 /* MJRefresh.bundle in Resources */,
+				2962224922C34C19002BDD3C /* UMShare.textClipping in Resources */,
+				2962225022C34C41002BDD3C /* UMCommonLog.bundle in Resources */,
 				29AFEED6206B948A002A082E /* README.md in Resources */,
 				2943631E21F1AB0500A3F4BA /* JSCallOCInterceptURL.html in Resources */,
 				29AFEECB206B948A002A082E /* LICENSE in Resources */,
+				2962224A22C34C19002BDD3C /* UMSocialSDKResources.bundle in Resources */,
 				29B8A58A2064EC16008BF9D1 /* Main.storyboard in Resources */,
 				298D1B28207DEB06009291B8 /* mapapi.bundle in Resources */,
 			);
@@ -1446,6 +1552,8 @@
 				29B8A5BD2064EFA4008BF9D1 /* FloatButton_ViewController.m in Sources */,
 				299DF5A32079FA23008B1803 /* MJRefreshAutoGifFooter.m in Sources */,
 				297622072133F67B000D2865 /* LoginViewController.m in Sources */,
+				2962225522C34D2C002BDD3C /* UMShareA.m in Sources */,
+				299652AD229D1B8C0039B15F /* CMPedometerViewController.m in Sources */,
 				29B0B76620999F7F00509495 /* GaodeMapFactory.m in Sources */,
 				29AAB1062079BE5400C7EB0B /* AFURLResponseSerialization.m in Sources */,
 				29AAB1082079BE5400C7EB0B /* AFAutoPurgingImageCache.m in Sources */,
@@ -1508,10 +1616,12 @@
 				29B0B77B2099BAC600509495 /* MapEngine.m in Sources */,
 				29A279F9212FEFC9000C2950 /* PlanBViewController.m in Sources */,
 				298D1B5C207E1113009291B8 /* GaodeProtocolMapViewController.m in Sources */,
+				2962225922C35579002BDD3C /* UMShareViewController.m in Sources */,
 				29AAB1032079BE5400C7EB0B /* AFNetworkReachabilityManager.m in Sources */,
 				2943634421F8537F00A3F4BA /* BackAndCloseWebViewController.m in Sources */,
 				298D1B58207E0AD1009291B8 /* BaiduProtocolMapViewController.m in Sources */,
 				298D1B54207E0260009291B8 /* BaiduMapView.m in Sources */,
+				295D7511222FACD6008DCA26 /* UIWebViewInterceptViewController.m in Sources */,
 				29B8A5842064EC15008BF9D1 /* AppDelegate.m in Sources */,
 				29AFEECE206B948A002A082E /* MASConstraintMaker.m in Sources */,
 				299DF5AF2079FA23008B1803 /* UIScrollView+MJExtension.m in Sources */,
@@ -1700,6 +1810,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs\"",
 					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/GaodeMap/Libs\"",
+					"$(PROJECT_DIR)/MYDemoSet/M__Pods/UMShare",
+					"$(PROJECT_DIR)/MYDemoSet/M__Pods/UMShare/UMSocialUI",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_INPUT_FILETYPE = automatic;
@@ -1707,12 +1819,15 @@
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"",
+					"$(PROJECT_DIR)/MYDemoSet/M__Pods/UMShare/SocialLibraries/WeChat",
+				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MYDemoSet;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MYDemoSet.sec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1728,6 +1843,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs\"",
 					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/GaodeMap/Libs\"",
+					"$(PROJECT_DIR)/MYDemoSet/M__Pods/UMShare",
+					"$(PROJECT_DIR)/MYDemoSet/M__Pods/UMShare/UMSocialUI",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_INPUT_FILETYPE = automatic;
@@ -1735,12 +1852,15 @@
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"",
+					"$(PROJECT_DIR)/MYDemoSet/M__Pods/UMShare/SocialLibraries/WeChat",
+				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MYDemoSet;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MYDemoSet.sec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

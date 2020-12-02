@@ -39,7 +39,8 @@ API_AVAILABLE(ios(8.0))
     _wkWebView.navigationDelegate = self;
     
     // 设置访问的URL
-    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    //http://app.tiancity.com/cmhdata/Home/RoleList?k=503693282&u=3341145100be414aba316724861412ed&v=1560741679716
+    NSURL *url = [NSURL URLWithString:@"http://app.tiancity.com/cmhdata/Home/RoleList?k=503693282&u=3341145100be414aba316724861412ed&v=1560741679716"];
     // 根据URL创建请求
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     // WKWebView加载请求
@@ -54,7 +55,9 @@ API_AVAILABLE(ios(8.0))
     self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
     _progressView.frame = CGRectMake(0, 44, SCREEN_WIDTH, 5);
     
-    [_progressView setTrackTintColor:[UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1.0]];
+//    [_progressView setTrackTintColor:[UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1.0]];
+    [_progressView setTrackTintColor:[UIColor redColor]];
+    
     _progressView.progressTintColor = [UIColor greenColor];
     [self.view addSubview:_progressView];
     
@@ -84,7 +87,6 @@ API_AVAILABLE(ios(8.0))
 
 #pragma mark - KVO
 //kvo 监听进度
-
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     
     if ([keyPath isEqualToString:NSStringFromSelector(@selector(estimatedProgress))]

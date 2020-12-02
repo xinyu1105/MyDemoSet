@@ -43,13 +43,13 @@
  @param button button description
  */
 - (void)clickButtonAction:(UIButton *)button{
-//    BackAndCloseWebViewController *backWebVC = [[BackAndCloseWebViewController alloc]init];
-//    [self.navigationController pushViewController:backWebVC animated:YES];
+    BackAndCloseWebViewController *backWebVC = [[BackAndCloseWebViewController alloc]init];
+    [self.navigationController pushViewController:backWebVC animated:YES];
 //
     
     
-    WKWebViewController *backWebVC = [[WKWebViewController alloc]init];
-    [self.navigationController pushViewController:backWebVC animated:YES];
+//    WKWebViewController *backWebVC = [[WKWebViewController alloc]init];
+//    [self.navigationController pushViewController:backWebVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

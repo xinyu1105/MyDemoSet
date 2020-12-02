@@ -45,6 +45,12 @@
 #import "JSCallOCInterceptURLViewController.h"
 //UIWebView 返回 关闭按钮
 #import "BackAndCloseViewController.h"
+//WKWebView 加载进度
+#import "WKWebViewController.h"
+//计步器
+#import "CMPedometerViewController.h"
+//友盟分享
+#import "UMShareViewController.h"
 
 #import "Global.h"
 #import "CustomFloatButton.h"
