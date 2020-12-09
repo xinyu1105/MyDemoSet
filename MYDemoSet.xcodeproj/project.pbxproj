@@ -35,6 +35,7 @@
 		2962225922C35579002BDD3C /* UMShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962225822C35579002BDD3C /* UMShareViewController.m */; };
 		297622072133F67B000D2865 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297622062133F67B000D2865 /* LoginViewController.m */; };
 		2976220A2133F96B000D2865 /* LoginDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297622092133F96B000D2865 /* LoginDelegateViewController.m */; };
+		297735A9257E188900B72C58 /* CoreLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297735A8257E188900B72C58 /* CoreLocationViewController.m */; };
 		2977938121217D5900A972E5 /* NSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977938021217D5900A972E5 /* NSDateTool.m */; };
 		2977938521217EB100A972E5 /* MasonryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977938421217EB100A972E5 /* MasonryListViewController.m */; };
 		2977938921217FE900A972E5 /* MasonryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977938821217FE900A972E5 /* MasonryListTableViewCell.m */; };
@@ -140,6 +141,8 @@
 		29B8A5C12064EFDC008BF9D1 /* CustomFloatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B8A5C02064EFDC008BF9D1 /* CustomFloatButton.m */; };
 		29C647FF20F49D520066F51D /* MainTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C647FE20F49D520066F51D /* MainTypeTableViewCell.m */; };
 		29C6E651207C912100D52F04 /* BaiduSimpleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C6E650207C912100D52F04 /* BaiduSimpleMapViewController.m */; };
+		29C902292577791700B51624 /* AppDelegate+UMShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C902282577791700B51624 /* AppDelegate+UMShare.m */; };
+		29C902352578B2E900B51624 /* CoreLocationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C902342578B2E900B51624 /* CoreLocationObject.m */; };
 		29F3F25521017EA5004F5E61 /* M_Images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29F3F25421017EA5004F5E61 /* M_Images.bundle */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +201,8 @@
 		297622062133F67B000D2865 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		297622082133F96B000D2865 /* LoginDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDelegateViewController.h; sourceTree = "<group>"; };
 		297622092133F96B000D2865 /* LoginDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDelegateViewController.m; sourceTree = "<group>"; };
+		297735A7257E188900B72C58 /* CoreLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreLocationViewController.h; sourceTree = "<group>"; };
+		297735A8257E188900B72C58 /* CoreLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreLocationViewController.m; sourceTree = "<group>"; };
 		2977937F21217D5900A972E5 /* NSDateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDateTool.h; sourceTree = "<group>"; };
 		2977938021217D5900A972E5 /* NSDateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateTool.m; sourceTree = "<group>"; };
 		2977938321217EB100A972E5 /* MasonryListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryListViewController.h; sourceTree = "<group>"; };
@@ -407,6 +412,10 @@
 		29C647FE20F49D520066F51D /* MainTypeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTypeTableViewCell.m; sourceTree = "<group>"; };
 		29C6E64F207C912100D52F04 /* BaiduSimpleMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduSimpleMapViewController.h; sourceTree = "<group>"; };
 		29C6E650207C912100D52F04 /* BaiduSimpleMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduSimpleMapViewController.m; sourceTree = "<group>"; };
+		29C902272577791700B51624 /* AppDelegate+UMShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UMShare.h"; sourceTree = "<group>"; };
+		29C902282577791700B51624 /* AppDelegate+UMShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UMShare.m"; sourceTree = "<group>"; };
+		29C902332578B2E900B51624 /* CoreLocationObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoreLocationObject.h; path = MYDemoSet/M__Controllers/MyFind/CoreLocationObject.h; sourceTree = SOURCE_ROOT; };
+		29C902342578B2E900B51624 /* CoreLocationObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CoreLocationObject.m; path = MYDemoSet/M__Controllers/MyFind/CoreLocationObject.m; sourceTree = SOURCE_ROOT; };
 		29F3F25421017EA5004F5E61 /* M_Images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = M_Images.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -415,6 +424,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298D1B0C207DE5D2009291B8 /* CoreLocation.framework in Frameworks */,
 				298D1B14207DE617009291B8 /* CoreGraphics.framework in Frameworks */,
 				2962225322C34CBA002BDD3C /* libsqlite3.tbd in Frameworks */,
 				2943634A220045A700A3F4BA /* WebKit.framework in Frameworks */,
@@ -433,7 +443,6 @@
 				298D1B31207DEC3D009291B8 /* libcrypto.a in Frameworks */,
 				298D1B4B207DF272009291B8 /* libc++.tbd in Frameworks */,
 				298D1B0E207DE5E4009291B8 /* QuartzCore.framework in Frameworks */,
-				298D1B0C207DE5D2009291B8 /* CoreLocation.framework in Frameworks */,
 				298D1B18207DE632009291B8 /* libsqlite3.0.tbd in Frameworks */,
 				298D1ADD207DB56F009291B8 /* Foundation.framework in Frameworks */,
 				298D1ADB207DB55D009291B8 /* UIKit.framework in Frameworks */,
@@ -525,7 +534,7 @@
 				29B8A5BA2064EF4D008BF9D1 /* FloatButton */,
 				290050A020A96D4900575241 /* Camera */,
 				2977938221217E3B00A972E5 /* Masonry自动计算高度 */,
-				29A279F0212FEF1F000C2950 /* 界面间传值 */,
+				29A279F0212FEF1F000C2950 /* 代理使用 */,
 				296472E421D4B3E100BBEDE1 /* UIWebview JS交互 */,
 				2943633E21F8528300A3F4BA /* UIWebView返回关闭按钮 */,
 				2943634522003CCE00A3F4BA /* WKWebView */,
@@ -560,6 +569,8 @@
 		2943632221F1BCF900A3F4BA /* MyFind */ = {
 			isa = PBXGroup;
 			children = (
+				297735A7257E188900B72C58 /* CoreLocationViewController.h */,
+				297735A8257E188900B72C58 /* CoreLocationViewController.m */,
 			);
 			path = MyFind;
 			sourceTree = "<group>";
@@ -581,6 +592,8 @@
 		2943632521F1BD4600A3F4BA /* MyFind */ = {
 			isa = PBXGroup;
 			children = (
+				29C902332578B2E900B51624 /* CoreLocationObject.h */,
+				29C902342578B2E900B51624 /* CoreLocationObject.m */,
 			);
 			path = MyFind;
 			sourceTree = "<group>";
@@ -1045,7 +1058,7 @@
 			path = FactoryWay;
 			sourceTree = "<group>";
 		};
-		29A279F0212FEF1F000C2950 /* 界面间传值 */ = {
+		29A279F0212FEF1F000C2950 /* 代理使用 */ = {
 			isa = PBXGroup;
 			children = (
 				29A279F4212FEFB1000C2950 /* PlanAViewController.h */,
@@ -1054,7 +1067,7 @@
 				29A279F8212FEFC9000C2950 /* PlanBViewController.m */,
 				297622032133F54B000D2865 /* Login */,
 			);
-			path = "界面间传值";
+			path = "代理使用";
 			sourceTree = "<group>";
 		};
 		29AAB0DE2079BE5400C7EB0B /* 3.0AFN */ = {
@@ -1276,6 +1289,8 @@
 			children = (
 				29B8A5822064EC15008BF9D1 /* AppDelegate.h */,
 				29B8A5832064EC15008BF9D1 /* AppDelegate.m */,
+				29C902272577791700B51624 /* AppDelegate+UMShare.h */,
+				29C902282577791700B51624 /* AppDelegate+UMShare.m */,
 				2943632D21F1BEA600A3F4BA /* NaviAndTabbar */,
 				29B8A5C22064EFFE008BF9D1 /* M__Base */,
 				29B8A5C42064F036008BF9D1 /* M__Tools */,
@@ -1573,6 +1588,7 @@
 				29AAB10B2079BE5400C7EB0B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				29AAB1022079BE5400C7EB0B /* AFHTTPSessionManager.m in Sources */,
 				2992161720E4CEBA00F4E280 /* CustomCameraViewController.m in Sources */,
+				29C902292577791700B51624 /* AppDelegate+UMShare.m in Sources */,
 				299DF5A62079FA23008B1803 /* MJRefreshBackGifFooter.m in Sources */,
 				299DF5AE2079FA23008B1803 /* NSBundle+MJRefresh.m in Sources */,
 				29AAB10D2079BE5400C7EB0B /* UIImageView+AFNetworking.m in Sources */,
@@ -1612,6 +1628,7 @@
 				299DF5A82079FA23008B1803 /* MJRefreshBackStateFooter.m in Sources */,
 				299DF5AD2079FA23008B1803 /* MJRefreshConst.m in Sources */,
 				2943634822003D3300A3F4BA /* WKWebViewController.m in Sources */,
+				29C902352578B2E900B51624 /* CoreLocationObject.m in Sources */,
 				299DF5A92079FA23008B1803 /* MJRefreshGifHeader.m in Sources */,
 				29B0B77B2099BAC600509495 /* MapEngine.m in Sources */,
 				29A279F9212FEFC9000C2950 /* PlanBViewController.m in Sources */,
@@ -1627,6 +1644,7 @@
 				299DF5AF2079FA23008B1803 /* UIScrollView+MJExtension.m in Sources */,
 				299DF5A42079FA23008B1803 /* MJRefreshAutoNormalFooter.m in Sources */,
 				29B0B76C2099AA8900509495 /* BaiduMapLocation.m in Sources */,
+				297735A9257E188900B72C58 /* CoreLocationViewController.m in Sources */,
 				29AFEED5206B948A002A082E /* ViewController+MASAdditions.m in Sources */,
 				29AFEED1206B948A002A082E /* MASViewConstraint.m in Sources */,
 				29AAB10A2079BE5400C7EB0B /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1819,7 +1837,7 @@
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"",
@@ -1852,7 +1870,7 @@
 				GCC_PREFIX_HEADER = MYDemoSet/M_Macro/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = MYDemoSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/MYDemoSet/M__Controllers/MYBasal/BaiduMap/Libs/thirdlibs\"",

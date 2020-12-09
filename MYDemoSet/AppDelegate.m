@@ -7,14 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+UMShare.h"
 #import "MainTypeViewController.h"
 #import "CustomFloatButton.h"
 //5,
 #import "BaiduMapFactory.h"
 
-#import <UMShare/UMShare.h>
-#import <UMCommonLog/UMCommonLogManager.h>
-#import <UMCommon/UMCommon.h>
+
 
 
 @interface AppDelegate ()
@@ -26,14 +25,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [UMCommonLogManager setUpUMCommonLogManager];
-    [UMConfigure setLogEnabled:YES];
-    //UM_AppKey
-    [UMConfigure initWithAppkey:UM_AppKey channel:@"App Store"];
+   //配置分享功能
+//    [self registerUMShare:launchOptions];
     
-    // U-Share 平台设置
-    [self configUSharePlatforms];
-    [self confitUShareSettings];
+   
     
     //1,快速集成百度地图
 //    [self setBaiduSimpleMap];
@@ -49,7 +44,7 @@
 //    [self setGaodeProtocolMap];
     
     //5,SDK设计
-    [self setBaiduMapWithFactory];
+//    [self setBaiduMapWithFactory];
 
     
     MainTypeViewController *typeTVC = [[MainTypeViewController alloc]init];
@@ -118,58 +113,6 @@
 -(void)setBaiduMapWithFactory{
  
 }
-- (void)confitUShareSettings{
-    /*
-     * 打开图片水印
-     */
-    [UMSocialGlobal shareInstance].isUsingWaterMark = YES;
-    /*
-     * 关闭强制验证https，可允许http图片分享，但需要在info.plist设置安全域名
-     <key>NSAppTransportSecurity</key>
-     <dict>
-     <key>NSAllowsArbitraryLoads</key>
-     <true/>
-     </dict>
-     */
-    //[UMSocialGlobal shareInstance].isUsingHttpsWhenShareContent = NO;
-}
-
--(void)configUSharePlatforms{
-    /* 设置微信的appKey和appSecret */
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:UMShareWeixinAppID appSecret:UMShareWeixinAppSecret redirectURL:@"http://mobile.umeng.com/social"];
-}
-
-// 支持所有iOS系统
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    //6.3的新的API调用，是为了兼容国外平台(例如:新版facebookSDK,VK等)的调用[如果用6.2的api调用会没有回调],对国内平台没有影响
-    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
-    if (!result) {
-        // 其他如支付等SDK的回调
-    }
-    return result;
-}
-
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
-{
-    //6.3的新的API调用，是为了兼容国外平台(例如:新版facebookSDK,VK等)的调用[如果用6.2的api调用会没有回调],对国内平台没有影响
-    BOOL result = [[UMSocialManager defaultManager]  handleOpenURL:url options:options];
-    if (!result) {
-        // 其他如支付等SDK的回调
-    }
-    return result;
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url];
-    if (!result) {
-        // 其他如支付等SDK的回调
-    }
-    return result;
-}
-
-
 
 
 

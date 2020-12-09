@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self createUI];
+//    [self createUI];
 }
 
 - (void)createUI {

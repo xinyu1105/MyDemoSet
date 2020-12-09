@@ -48,6 +48,7 @@
                             @"WKWebViewController",
                             @"CMPedometerViewController计步器",
                             @"UMShareViewController分享",
+                            @"CoreLocation定位",
                             nil];
     self.vcClassNameArray = [NSMutableArray arrayWithObjects:
                              @"ExampleViewController",
@@ -70,6 +71,7 @@
                              @"WKWebViewController",
                              @"CMPedometerViewController",
                              @"UMShareViewController",
+                             @"CoreLocationViewController",
                              nil];
     
     self.tableView = [[UITableView alloc]init];

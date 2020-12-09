@@ -7,9 +7,12 @@
 //
 
 #import "CoreLocationViewController.h"
+#import "CoreLocationObject.h"
+
+#define kScreenW CGRectGetWidth([UIScreen mainScreen].bounds)
 
 @interface CoreLocationViewController ()
-
+@property (nonatomic, readwrite, strong) UILabel *label1;
 @end
 
 @implementation CoreLocationViewController
@@ -17,8 +20,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //测试Label和Button
+    _label1 = [[UILabel alloc] init];
+    _label1.bounds = CGRectMake(0, 0, kScreenW - 30, 50);
+    _label1.center = CGPointMake(kScreenW / 2, 100);
+    _label1.textAlignment = NSTextAlignmentCenter;
+    _label1.numberOfLines = 0;
+    _label1.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:_label1];
+    
+    UIButton *btn1 = [[UIButton alloc] init];
+    btn1.bounds = CGRectMake(0, 80, 150, 30);
+    btn1.center = CGPointMake(kScreenW / 2, 180);
+    btn1.backgroundColor = [UIColor redColor];
+    [btn1 setTitle:@"定位按钮1" forState:UIControlStateNormal];
+    [btn1 addTarget:self action:@selector(click1) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn1];
+    
+    
 }
 
+
+- (void)click1 {
+    __weak typeof(self) weakSelf = self;
+    [[CoreLocationObject sharedInstance] startWithCompletionHandler:^(LocationModel * _Nullable model) {
+        NSLog(@"经度:%@--纬度:%@--地址:%@",model.longitude,model.latitude,model.address);
+        weakSelf.label1.text = model.address;
+    }];
+    
+}
 /*
 #pragma mark - Navigation
 
