@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IMapViewProtocol.h"
+
 @interface GaodeMapView : UIView<IMapViewProtocol>
 
 @end

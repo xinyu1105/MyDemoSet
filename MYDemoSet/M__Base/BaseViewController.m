@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     self.view.backgroundColor = [UIColor whiteColor];
+
+    //设置导航条背景颜色
+    self.navigationController.navigationBar.barTintColor = [UIColor lightGrayColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
 

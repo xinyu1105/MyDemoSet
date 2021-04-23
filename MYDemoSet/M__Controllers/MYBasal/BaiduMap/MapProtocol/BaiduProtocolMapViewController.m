@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     self.title = @"快速实现百度地图";
     //快速实现
+    //工厂模式->第一步代码结构的优化(面向协议编程，OOP思想，父类的引用指向子类实例对象)
     id<IMapViewProtocol> mapView = [[BaiduMapView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:[mapView getView]];
     

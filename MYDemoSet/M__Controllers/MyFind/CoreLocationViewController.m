@@ -30,14 +30,22 @@
     _label1.backgroundColor = [UIColor greenColor];
     [self.view addSubview:_label1];
     
-    UIButton *btn1 = [[UIButton alloc] init];
-    btn1.bounds = CGRectMake(0, 80, 150, 30);
-    btn1.center = CGPointMake(kScreenW / 2, 180);
+    UIButton *btn = [[UIButton alloc] init];
+    btn.bounds = CGRectMake(0, 80, 150, 30);
+    btn.center = CGPointMake(kScreenW / 2, 180);
+    btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"定位按钮1" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(click1) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn1.frame = CGRectMake(50, 220, 96, 96);
     btn1.backgroundColor = [UIColor redColor];
-    [btn1 setTitle:@"定位按钮1" forState:UIControlStateNormal];
-    [btn1 addTarget:self action:@selector(click1) forControlEvents:UIControlEventTouchUpInside];
+    btn1.layer.cornerRadius = 50;
     [self.view addSubview:btn1];
     
+    [btn1 setImage:[UIImage imageNamed:@"btnImage"] forState:UIControlStateNormal];
+    btn1.clipsToBounds = YES;
     
 }
 

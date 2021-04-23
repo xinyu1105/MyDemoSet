@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"我的Demo集";
+//    self.navigationItem.title = @"我的";
     self.view.backgroundColor = [UIColor whiteColor];
     self.typeTitlesArray = [NSMutableArray arrayWithObjects:
                             @"测试Example",
@@ -77,14 +77,19 @@
     self.tableView = [[UITableView alloc]init];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    _tableView.frame = CGRectMake(0, StatusAndNaviHeight, SCREEN_WIDTH, SCREEN_HEIGHT-(StatusAndNaviHeight + TabbarHeight));
+    NSLog(@"%lf %lf", StatusHeight,StatusAndNaviHeight);
+    
     _tableView.rowHeight = UITableViewAutomaticDimension;
     _tableView.estimatedRowHeight = 40;
     [self.view addSubview:_tableView];
     
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(self.view);
-        make.top.equalTo(self.view).offset(20);
-    }];
+//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.equalTo(self.view);
+//
+//        make.top.equalTo(self.view.mas_top).offset((StatusAndNaviHeight));
+//        make.bottom.equalTo(self.view.mas_bottom).offset(-(iPhoneXSafeBottomMargin));
+//    }];
     
     [self.tableView registerClass:[MainTypeTableViewCell class] forCellReuseIdentifier:@"cell"];
 

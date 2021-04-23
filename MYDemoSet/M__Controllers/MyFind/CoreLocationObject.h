@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class  LocationModel;
-
+//block
 typedef void(^LocationCompletionBlock)(LocationModel * _Nullable model);
 
 //typedef void (^ReturnTextBlock)(NSString * _Nullable showText);

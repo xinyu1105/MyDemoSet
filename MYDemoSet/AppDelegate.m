@@ -13,7 +13,7 @@
 //5,
 #import "BaiduMapFactory.h"
 
-
+#import "TabBarViewController.h"
 
 
 @interface AppDelegate ()
@@ -38,7 +38,7 @@
     
     //3,快速实现百度地图设计
     
-//    [self setBaiduProtocolMap];
+    [self setBaiduProtocolMap];
     
     //4,快速实现高德地图设计
 //    [self setGaodeProtocolMap];
@@ -47,16 +47,19 @@
 //    [self setBaiduMapWithFactory];
 
     
-    MainTypeViewController *typeTVC = [[MainTypeViewController alloc]init];
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:typeTVC];
-    self.window.rootViewController = navi;
+//    MainTypeViewController *typeTVC = [[MainTypeViewController alloc]init];
+//    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:typeTVC];
+//    self.window.rootViewController = navi;
+    
+    TabBarViewController *tabbarVC = [[TabBarViewController alloc]init];
+    self.window.rootViewController = tabbarVC;
     
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self addCustomFloatButton];
     });
     
-    
+
  
     
     return YES;

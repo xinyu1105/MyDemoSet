@@ -17,9 +17,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //普通写法(开发中通常写法)：测试
     
-//    BMKMapView * mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
-//    [self.view addSubview:mapView];
+    //地图显示
+    BMKMapView * mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:mapView];
     
     
 }

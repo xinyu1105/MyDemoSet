@@ -18,6 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.delegate = self;
+    //设置导航条背景颜色
+//    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
+//    self.backgroundColor = [UIColor greenColor];
+    
 }
 
 
