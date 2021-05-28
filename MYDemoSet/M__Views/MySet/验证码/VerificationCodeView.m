@@ -357,26 +357,60 @@
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        self.dataDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
         //主线程执行
         dispatch_async(dispatch_get_main_queue(), ^{
             if(error){
                 return;
             }
-            //[self.refreshButton.imageView.layer removeAnimationForKey:@"refreshRotationAnimation"];
-            self.dataDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-            
+    
             //NSLog(@"%@",self.dataDic);
             NSLog(@"Token:%@",self.dataDic[@"Data"][@"Token"]);
             NSLog(@"Key:%@",self.dataDic[@"Data"][@"Key"]);
             
-            [self showWithData:self.dataDic[@"Data"]];
-            
+            if ([self.dataDic[@"Data"][@"Token"] length]) {
+                [self showWithData:self.dataDic[@"Data"]];
+            }
         });
     }];
     
     [task resume];
     
 }
+-(void)get{
+
+     NSString *urlstring=@"http://japi.juhe.cn/joke/content/list.from?key=488c65f3230c0280757b50686d1f1cd5&page=1&pagesize=1&sort=asc&time=1418745237";
+     //如果URL网址里有中文，要先转成utf8
+     NSString *urlstr=[urlstring stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+
+    //设置请求地址,GET请求，直接把请求参数跟在URL的后面以？隔开，多个参数之间以&符号拼接
+    NSURL *url=[NSURL URLWithString:LIST_URL];
+   
+    //1.创建Session
+    NSURLSession *session=[NSURLSession sharedSession];
+    //2.根据会话创建任务
+    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        //在子线程中执行的
+        NSLog(@"----%@----",[NSThread currentThread]);
+        if(error==nil){
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            NSLog(@"%@",dict);
+        }
+        
+        [dispatch_async(dispatch_get_main_queue(), ^{
+            //UI的操作
+        })];
+        
+        //回归主线程，如果要做UI的操作，必须回到主线程
+        //[self performSelectorOnMainThread:<#(nonnull SEL)#> withObject:<#(nullable id)#> waitUntilDone:(BOOL)];
+        // [dispatch_async(dispatch_get_main_queue(), <#^(void)block#>)]
+        //[NSOperationQueue mainQueue] addOperationWithBlock:<#^(void)block#>
+    }];
+    //3.启动任务
+    [dataTask resume];
+}
+
+
 
 -(void)showWithData:(NSDictionary *)dict{
     self.bgImageUrl = dict[@"Bg"];
@@ -397,6 +431,9 @@
  客户端验证，验证滑块滑动位置是否正确
  */
 -(void)checkWithToken:(NSString *)token Key:(NSString *)key MoveX:(NSString *)moveX{
+    if (token.length == 0 || key.length == 0) {
+        return;
+    }
     // 1.创建一个网络路径
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://nc.tiancity.com/captcha/check"]];
     // 2.创建一个网络请求，分别设置请求方法、请求参数
@@ -417,13 +454,15 @@
     NSURLSession *session = [NSURLSession sharedSession];
     // 4.根据会话对象，创建一个Task任务
     NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-      
-        //主线程执行
+       
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
+        
+        //回归主线程执行
         dispatch_async(dispatch_get_main_queue(), ^{
             if(error){
                 return;
             }
-            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
+            
             [self checkResult:dict];
 
         });
